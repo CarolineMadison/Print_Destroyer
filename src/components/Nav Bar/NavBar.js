@@ -13,11 +13,13 @@ class NavBar extends Component {
         </h1>
         <nav>
           <ul className="container">
-            <img className="logoImage" src={require('./Logo.jpg')} alt="Print Destroyer Logo" />
             <li><Link className="nav-link" to="/">Home</Link></li>
             <li><Link className="nav-link" to="/profile">Profile</Link></li>
             <li><Link className="nav-link" to="/prints">Prints</Link></li>
             <li><Link className="nav-link" to="/wishlist">Wish List</Link></li>
+            <picture>
+                <img className="logoImage" src={require('./Logo.jpg')} alt="Print Destroyer Logo" />
+            </picture>
           </ul>
         </nav>
       </header>

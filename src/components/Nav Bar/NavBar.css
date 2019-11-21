@@ -4,3 +4,14 @@
     display: block;
     margin: 0 auto;
 }
+
+.container {
+    display: flex;
+}
+
+li {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
