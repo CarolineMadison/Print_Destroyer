@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
+// import "./PrintWelcome.css"
+
 
 
 class PrintWelcome extends Component {
     render() {
         return (
             <div>
+                <h3>Bellow Under Construction: Welcome Page. Login and Registration Buttons. Above is the NavBar, which needs to render when user is logged in.</h3>
                 <h2>Print Destroyer<br />
                     <small>Cut. Paste. Destroy.</small>
-                </h2>
-                <img src={require('./Logo.jpg')} alt="Print Destroyer Logo" />
+                </h2> 
             </div>
         );
     }

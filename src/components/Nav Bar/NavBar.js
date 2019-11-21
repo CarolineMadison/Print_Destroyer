@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom"
-// import './NavBar.css'
+import './NavBar.css'
 
 class NavBar extends Component {
 
@@ -13,6 +13,7 @@ class NavBar extends Component {
         </h1>
         <nav>
           <ul className="container">
+            <img className="logoImage" src={require('./Logo.jpg')} alt="Print Destroyer Logo" />
             <li><Link className="nav-link" to="/">Home</Link></li>
             <li><Link className="nav-link" to="/profile">Profile</Link></li>
             <li><Link className="nav-link" to="/prints">Prints</Link></li>
