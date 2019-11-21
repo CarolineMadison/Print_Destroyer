@@ -15,3 +15,6 @@ li {
     flex-direction: row;
 }
 
+p {
+    margin-top: -20px;
+}

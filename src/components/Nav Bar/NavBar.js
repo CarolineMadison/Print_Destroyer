@@ -8,9 +8,8 @@ class NavBar extends Component {
 
     return (
       <header>
-        <h1 className="site-title">Print Destroyer<br />
-          <small>Cut. Paste. Destroy.</small>
-        </h1>
+        <h1 className="site-title"><u>Print Destroyer</u></h1>
+        <p>An Art Print Sharing App</p>
         <nav>
           <ul className="container">
             <li><Link className="nav-link" to="/">Home</Link></li>
