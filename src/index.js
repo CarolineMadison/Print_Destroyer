@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { BrowserRouter as Router } from "react-router-dom"
 import * as firebase from "firebase/app";
+import PrintDestroyer from './components/PrintDestroyer';
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
@@ -18,14 +17,10 @@ var firebaseConfig = {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-//   firebase.analytics();
 
 ReactDOM.render(
-    <Router>
-        <printDestroyer />
-    </Router>
-        , document.getElementById('root'));
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+  <Router>
+    <PrintDestroyer />
+  </Router>
+  , document.getElementById('root'))
+
