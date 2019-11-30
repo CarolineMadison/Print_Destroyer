@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Londrina+Outline&display=swap');
 
 .headerContainer {
   background-color:  slategray;
-  /* border-radius: 8px; */
+  border-radius: 8px;
 }
 
 .logoImage {
     width: 20%;
-    border-radius: 8px;
-    margin: 5px 5px 22px 30px;
-    margin-top: 20px;
-    margin-left: 50px;
-    box-shadow: 7px 7px 12px black;
+    margin-bottom: -30px;
+    margin-left: 40px;
 }
 
 .navBar a:hover {
@@ -29,8 +27,8 @@ nav li {
     display: inline;
     font-size: 13px;
     padding: 0 50px 5px 0;
-    /* font-family: 'Raleway', sans-serif; */
-    font-family: 'Cinzel', serif;
+    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Cinzel', serif; */
 }
 
 a {
@@ -42,11 +40,10 @@ a {
 }
 
 h4 {
-    margin-left: 30px;
-    margin-top: 160px;
-    /* text-decoration: underline; */
     font-family: 'Cinzel', serif;
-    font-size: 19px;
+    font-size: 20px;
+    margin-top: 45px;
+    text-shadow: 2px 2px 3px white;
 }
 
 picture {
@@ -54,7 +51,7 @@ picture {
 }
 
 #jim {
-    font-size: 10px;
+    font-size: 15px;
     margin-bottom: -2px;
 }
 
