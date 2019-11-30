@@ -1,0 +1,37 @@
+{
+  "posters": [
+    {
+      "id": 1,
+      "title": "Effigy",
+      "dimentions": "10x20",
+      "cost": 38,
+      "description": "3 color silkscreen art print",
+      "sold": false
+    },
+    {
+      "id": 2,
+      "title": "Bone Mazinga",
+      "dimentions": "16X20",
+      "cost": 78,
+      "description": "silkscreen monoprint",
+      "sold": false
+    },
+    {
+      "id": 3,
+      "title": "No! Not Her!",
+      "dimentions": "16X20",
+      "cost": 38,
+      "description": "color silkscreen",
+      "sold": false
+    },
+    {
+      "title": "A title",
+      "dimentions": "",
+      "cost": "",
+      "description": "",
+      "sold": false,
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1575049732496?alt=media&token=7b054282-c0b3-486c-b74a-692b0f98eb9d",
+      "id": 4
+    }
+  ]
+}

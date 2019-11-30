@@ -1,20 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+
+.headerContainer {
+  background-color:  slategray;
+  /* border-radius: 8px; */
+}
+
 .logoImage {
-    width: 30%;
-    border-radius: 5px;
-    display: block;
-    margin: 0 auto;
+    width: 20%;
+    border-radius: 8px;
+    margin: 5px 5px 22px 30px;
+    margin-top: 20px;
+    margin-left: 50px;
+    box-shadow: 7px 7px 12px black;
 }
 
-.container {
+.navBar a:hover {
+    color: goldenrod;
+}
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    font-size: 13px;
+    padding: 0 50px 5px 0;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Cinzel', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link {
+    color: black;
+}
+
+h4 {
+    margin-left: 30px;
+    margin-top: 160px;
+    /* text-decoration: underline; */
+    font-family: 'Cinzel', serif;
+    font-size: 19px;
+}
+
+picture {
     display: flex;
 }
 
-li {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+#jim {
+    font-size: 10px;
+    margin-bottom: -2px;
 }
 
-p {
-    margin-top: -20px;
-}
+
+
+
+

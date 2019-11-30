@@ -1,6 +1,7 @@
 import { Route } from 'react-router-dom'
 import React, { Component } from 'react'
 import PrintWelcome from './App Welcome Page/PrintWelcome'
+import UploadPrintForm from './Prints/UploadPrintForm'
 
 class ApplicationViews extends Component {
 
@@ -10,9 +11,12 @@ class ApplicationViews extends Component {
                 <Route exact path="/" render={(props) => {
                     return <PrintWelcome />
                 }} />
+                <Route path="/prints/new" render={(props) => {
+                    return <UploadPrintForm {...props} />
+                }} />
             </React.Fragment>
-              )
-            }
-          }
-          
+        )
+    }
+}
+
 export default ApplicationViews;
