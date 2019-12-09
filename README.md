@@ -19,7 +19,7 @@ Jim Madison is a local business owner and screen print artist in Bowling Green, 
 Customers:
 
 Upon registration, users will be able to build their own profile with a photo, bio, and contact information. 
-Upon login, users will be able to access an inventory of Jim's work with details, cost, title, and a photo of each screen print. The user will be able to save favorite screen prints to a wishlist. Users will be able to remove screen prints from their wishlist. Users will be able to edit their profile. Users will be able to logout when exiting the app, which will take them back to the homepage. 
+Upon login, users will be able to access an inventory of Jim's work with details, cost, title, and a photo of each screen print. The user will be able to save favorite screen prints to a wishlist. Users will be able to remove screen prints from their wishlist. Users will be able to edit their profile. Users will be able to log out when exiting the app, which will take them back to the homepage. 
 
 Administrator:
 
