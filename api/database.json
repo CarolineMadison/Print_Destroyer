@@ -1,37 +1,89 @@
 {
-  "posters": [
+  "users": [
     {
       "id": 1,
+      "name": "Jim Madison",
+      "photo": "https://www.instagram.com/p/B5m9_JHJGoO/",
+      "email": "jim@printdestroyer.com",
+      "password": "Jimmy",
+      "isAdmin": true,
+      "hasProfile": true,
+      "contact": {
+        "businessName": "Print Destroyer",
+        "address": "100 Three Springs Rd., Bowling Green, KY 42104",
+        "phone": "270-555-5555"
+      },
+      "bio": "I'm a screen print artist from Bowling Green, Kentucky. Welcome to my app!",
+      "favoriteQuote": "'Art is what you can get away with.' by Andy Warhol"
+    },
+    {
+      "id": 2,
+      "name": "Caroline Brownlee",
+      "photo": "https://www.instagram.com/p/B5YR9OzhaY1/",
+      "email": "brownleecaroline@gmail.com",
+      "password": "Caroline",
+      "isAdmin": false,
+      "hasProfile": true,
+      "contact": {
+        "businessName": "Caroline Madison Writer",
+        "address": "104 Doral Ln, Hendersonville, TN 37075",
+        "phone": "615-555-5555"
+      },
+      "bio": "I'm a creative writer and software engineer in Nashville, Tennessee.",
+      "favorite quote": "'She wanted something to happen - something, anything: she did not know what.' by Kate Chopin"
+    },
+    {
+      "id": 3,
+      "name": "Martha Madison",
+      "photo": "https://www.danceartsbg.com/images/Pictures/Bio_Photos/Martha.jpg",
+      "email": "marthamadison@gmail.com",
+      "password": "Martha",
+      "isAdmin": false,
+      "hasProfile": true,
+      "contact": {
+        "businessName": "Dance Arts of Bowling Green",
+        "address": "500 Pedigo Way, Bowling Green, KY 42014",
+        "phone": "270-555-2222"
+      },
+      "bio": "I'm a business owner and dancer. I've owned Dance Arts of Bowling Green since the age of 19.",
+      "favorite quote": "'Dance is for everybody. I believe that the dance came from the people and that it should always be delivered back to the people.' by Alvin Ailey"
+    }
+  ],
+  "prints": [
+    {
+      "id": 1, 
       "title": "Effigy",
-      "dimentions": "10x20",
-      "cost": 38,
       "description": "3 color silkscreen art print",
-      "sold": false
+      "cost": 38
     },
     {
       "id": 2,
       "title": "Bone Mazinga",
-      "dimentions": "16X20",
-      "cost": 78,
       "description": "silkscreen monoprint",
-      "sold": false
+      "cost": 78
     },
     {
       "id": 3,
       "title": "No! Not Her!",
-      "dimentions": "16X20",
-      "cost": 38,
       "description": "color silkscreen",
-      "sold": false
+      "cost": 38
+    }
+  ], 
+  "wishlist": [
+    {
+      "id": 1,
+      "userId": 2,
+      "printId": 3
     },
     {
-      "title": "A title",
-      "dimentions": "",
-      "cost": "",
-      "description": "",
-      "sold": false,
-      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1575049732496?alt=media&token=7b054282-c0b3-486c-b74a-692b0f98eb9d",
-      "id": 4
+      "id": 2,
+      "userId": 2,
+      "printId": 2
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "printId": 1
     }
   ]
 }

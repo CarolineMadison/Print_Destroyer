@@ -2,33 +2,33 @@
 @import url('https://fonts.googleapis.com/css?family=Londrina+Outline&display=swap');
 
 .headerContainer {
-  background-color:  slategray;
+  background-color:  goldenrod;
   border-radius: 8px;
 }
 
 .logoImage {
     width: 20%;
     margin-bottom: -30px;
-    margin-left: 40px;
+    margin-left: 17px;
 }
 
 .navBar a:hover {
-    color: goldenrod;
+    color: maroon;
 }
 
 .navBar {
     display: flex;
     justify-content: center;
-    color: black;
+    color: maroon;
 }
 
 nav li {
     list-style-type: none;
     display: inline;
-    font-size: 13px;
+    font-size: 15px;
     padding: 0 50px 5px 0;
-    font-family: 'Raleway', sans-serif;
-    /* font-family: 'Cinzel', serif; */
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Cinzel', serif;
 }
 
 a {
@@ -41,7 +41,7 @@ a {
 
 h4 {
     font-family: 'Cinzel', serif;
-    font-size: 20px;
+    font-size: 28px;
     margin-top: 45px;
     text-shadow: 2px 2px 3px white;
 }
