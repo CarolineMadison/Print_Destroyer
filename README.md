@@ -14,7 +14,7 @@ Caroline Brownlee
 
 What is Print Destroyer?
 
-Jim Madison is a local business owner and screen print artist in Bowling Green, Kentucky. He came to me with a desire to build his own marketplace at his fingertips for his company, Print Destroyer. Jim wants his customers to be able to create and account, see Jim's inventory of prints, and save favorites to a wishlist. (Version two of this application will have cart and purchasing capabilities, as well as allow customers to contact each other to buy, sell, and trade Jim's screen prints. 
+Jim Madison is a local business owner and screen print artist in Bowling Green, Kentucky. He came to me with a desire to build his own marketplace at his fingertips for his company, Print Destroyer. Jim wants his customers to be able to create an account, see Jim's inventory of prints, and save favorites to a wishlist. (Version two of this application will have cart and purchasing capabilities, as well as allow customers to contact each other to buy, sell, and trade Jim's screen prints. 
 
 Customers:
 
