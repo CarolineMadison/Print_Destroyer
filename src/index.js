@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom"
 import * as firebase from "firebase/app";
 import PrintDestroyer from './components/PrintDestroyer';
 
+
 // Your web app's Firebase configuration
 var firebaseConfig = {
     apiKey: "AIzaSyA-Z8BwKNYWX3ChFbAIxVcqebitlpJ4FTA",

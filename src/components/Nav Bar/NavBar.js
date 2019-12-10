@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom"
+import { Link, withRouter } from "react-router-dom"
 // import './NavBar.css'
 import { isUserWhitespacable } from '@babel/types';
 
 class NavBar extends Component {
 
   handleLogout = () => {
+    console.log(this.props.history)
     this.props.clearUser();
     this.props.history.push("/");
   }
@@ -27,9 +28,9 @@ class NavBar extends Component {
                   <li><Link className="nav-link" to="/profile">Profile</Link></li>
                   <li><Link className="nav-link" to="/prints">Prints</Link></li>
                   <li><Link className="nav-link" to="/customers">Wish List</Link></li>
-                  : <li><span className="nav-link" onClick={this.handleLogout}>Logout</span></li>
+                  <li><Link className="nav-link" onClick={this.handleLogout}>Log Out</Link></li>
                 </>
-                : <li><Link className="nav-link" to="/login"></Link></li>
+                : null
               }
             </ul>
           </nav>
@@ -38,4 +39,4 @@ class NavBar extends Component {
         )
       }
     }
-export default NavBar;
+export default withRouter(NavBar);
