@@ -18,21 +18,6 @@ class LoginForm extends Component {
     this.setState(stateToChange)
   }
 
-//   handleLogin = (e) => {
-//     e.preventDefault()
-//     /*
-//         For now, just store the email and password that
-//         the customer enters into local storage.
-//     */
-//     this.props.setUser({
-//       email: this.state.email,
-//       password: this.state.passowrd
-//     })
-    
-//     this.props.history.push("/home");
-
-//   }
-
   handleLogin = (e) => {
     e.preventDefault()
     printAPIManager.checkUser(this.state.email, this.state.password)
