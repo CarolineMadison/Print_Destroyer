@@ -47,18 +47,21 @@
     {
       "id": 1,
       "title": "Effigy",
+      "photo": "https://www.danceartsbg.com/images/Pictures/Bio_Photos/Martha.jpg",
       "description": "3 color silkscreen art print",
       "cost": 38
     },
     {
       "id": 2,
       "title": "Bone Mazinga",
+      "photo": "https://www.danceartsbg.com/images/Pictures/Bio_Photos/Martha.jpg",
       "description": "silkscreen monoprint",
       "cost": 78
     },
     {
       "id": 3,
       "title": "No! Not Her!",
+      "photo": "https://www.danceartsbg.com/images/Pictures/Bio_Photos/Martha.jpg",
       "description": "color silkscreen",
       "cost": 38
     }
