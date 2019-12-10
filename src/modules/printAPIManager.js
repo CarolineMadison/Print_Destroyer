@@ -5,8 +5,8 @@ export default {
   get(id) {
     return fetch(`${remoteURL}/prints/${id}`).then(result => result.json())
   },
-  getAll() {
-    return fetch(`${remoteURL}/prints`).then(result => result.json())
+  getAll(component) {
+    return fetch(`${remoteURL}/${component}`).then(result => result.json())
   },
   post(newPoster) {
     return fetch(`${remoteURL}/posters`, {
