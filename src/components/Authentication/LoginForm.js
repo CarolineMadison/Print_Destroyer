@@ -24,7 +24,7 @@ class LoginForm extends Component {
     .then(results => {
         if(results.length > 0) {
             this.props.setUser(results)
-            this.props.history.push("/home");
+            this.props.history.push("/prints");
         } else {
             alert("Incorrect username, email, or password")
         } 

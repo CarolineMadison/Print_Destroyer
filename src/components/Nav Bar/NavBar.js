@@ -24,7 +24,6 @@ class NavBar extends Component {
             <ul className="navList">
               {(this.props.user) ?
                 <>
-                  <li><Link className="nav-link" to="/">Home</Link></li>
                   <li><Link className="nav-link" to="/profile">Profile</Link></li>
                   <li><Link className="nav-link" to="/prints">Prints</Link></li>
                   <li><Link className="nav-link" to="/customers">Wish List</Link></li>
