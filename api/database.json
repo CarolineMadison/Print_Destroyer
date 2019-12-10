@@ -5,14 +5,12 @@
       "name": "Jim Madison",
       "photo": "https://www.instagram.com/p/B5m9_JHJGoO/",
       "email": "jim@printdestroyer.com",
-      "password": "Jimmy",
+      "password": "jimmy",
       "isAdmin": true,
       "hasProfile": true,
-      "contact": {
-        "businessName": "Print Destroyer",
-        "address": "100 Three Springs Rd., Bowling Green, KY 42104",
-        "phone": "270-555-5555"
-      },
+      "businessName": "Print Destroyer",
+      "address": "100 Three Springs Rd., Bowling Green, KY 42104",
+      "phone": "270-555-5555",
       "bio": "I'm a screen print artist from Bowling Green, Kentucky. Welcome to my app!",
       "favoriteQuote": "'Art is what you can get away with.' by Andy Warhol"
     },
@@ -24,11 +22,9 @@
       "password": "Caroline",
       "isAdmin": false,
       "hasProfile": true,
-      "contact": {
-        "businessName": "Caroline Madison Writer",
-        "address": "104 Doral Ln, Hendersonville, TN 37075",
-        "phone": "615-555-5555"
-      },
+      "businessName": "Caroline Madison Writer",
+      "address": "104 Doral Ln, Hendersonville, TN 37075",
+      "phone": "615-555-5555",
       "bio": "I'm a creative writer and software engineer in Nashville, Tennessee.",
       "favorite quote": "'She wanted something to happen - something, anything: she did not know what.' by Kate Chopin"
     },
@@ -40,18 +36,16 @@
       "password": "Martha",
       "isAdmin": false,
       "hasProfile": true,
-      "contact": {
-        "businessName": "Dance Arts of Bowling Green",
-        "address": "500 Pedigo Way, Bowling Green, KY 42014",
-        "phone": "270-555-2222"
-      },
+      "businessName": "Dance Arts of Bowling Green",
+      "address": "500 Pedigo Way, Bowling Green, KY 42014",
+      "phone": "270-555-2222",
       "bio": "I'm a business owner and dancer. I've owned Dance Arts of Bowling Green since the age of 19.",
       "favorite quote": "'Dance is for everybody. I believe that the dance came from the people and that it should always be delivered back to the people.' by Alvin Ailey"
     }
   ],
   "prints": [
     {
-      "id": 1, 
+      "id": 1,
       "title": "Effigy",
       "description": "3 color silkscreen art print",
       "cost": 38
@@ -68,7 +62,7 @@
       "description": "color silkscreen",
       "cost": 38
     }
-  ], 
+  ],
   "wishlist": [
     {
       "id": 1,

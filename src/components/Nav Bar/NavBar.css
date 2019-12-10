@@ -2,14 +2,18 @@
 @import url('https://fonts.googleapis.com/css?family=Londrina+Outline&display=swap');
 
 .headerContainer {
-  background-color:  goldenrod;
+  background-color:  black;
   border-radius: 8px;
 }
 
+nav.navBar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .logoImage {
-    width: 20%;
-    margin-bottom: -30px;
-    margin-left: 17px;
+    width: 25%;
+    /* margin-bottom: -190px; */
 }
 
 .navBar a:hover {
@@ -18,16 +22,15 @@
 
 .navBar {
     display: flex;
-    justify-content: center;
-    color: maroon;
+    justify-content: flex-end;
+    color: white;
 }
 
 nav li {
     list-style-type: none;
     display: inline;
-    font-size: 15px;
-    padding: 0 50px 5px 0;
-    /* font-family: 'Raleway', sans-serif; */
+    font-size: 20px;
+    padding: 0px 70px 5px 10px;
     font-family: 'Cinzel', serif;
 }
 
@@ -36,18 +39,16 @@ a {
 }
 
 .nav-link {
-    color: black;
+    color: goldenrod;
 }
 
 h4 {
     font-family: 'Cinzel', serif;
     font-size: 28px;
-    margin-top: 45px;
-    text-shadow: 2px 2px 3px white;
-}
-
-picture {
-    display: flex;
+    margin-top: 70px;
+    margin-bottom: -40px;
+    margin-left: -5px;
+    text-shadow: 3px 3px 3px maroon;
 }
 
 #jim {

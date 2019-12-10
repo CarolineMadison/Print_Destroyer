@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Londrina+Outline&display=swap');
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    border: black solid;
+    font-family: 'Cinzel', serif;
+    color: #d4dcdc;
+    text-shadow: 2px 2px 2px  #20355a;
+}   
+
+h3 {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+h5 {
+    margin-bottom: 2px;
+    font-size: medium;
+}
+
+div {
+    text-align: center;
+    justify-content: center;
+}
+
+label {
+    font-family: 'Cinzel', serif; 
+}
+
+button {
+    font-family: 'Cinzel', serif;
+    justify-content: center;
+    /* width: 200px; height: 25px; */
+    font-weight: bolder;
+    font-size: large;
+    color: white;
+    border: solid black;
+    background-color: black;
+}
+
+.welcomeScreenButtons {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 200px; height: 25px;
+}
+
+.logoImage {
+    width: 50%;
+    
+    padding-top: 30px;
+}
+
+div#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button#enterButton {
+    margin-top: 6%;
+    
+}
+
+p {
+    margin-bottom: -40px;
+}
