@@ -16,5 +16,9 @@ export default {
       },
       body: JSON.stringify(newPoster)
     }).then(data => data.json())
+  },
+  checkUser(email, password) {
+    return fetch(`${remoteURL}/users?email=${email}&password=${password}`)
+      .then(response => response.json())
   }
 }
