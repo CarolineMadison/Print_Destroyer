@@ -5,8 +5,6 @@ import PrintCard from './PrintCard'
 import printAPIManager from '../../modules/printAPIManager'
 import './prints.css'
 
-// const userId = localStorage.getItem("credentials")
-// console.log(userId)
 
 class PrintsList extends Component {
     //define what this component needs to render
@@ -16,23 +14,27 @@ class PrintsList extends Component {
             isAdmin: false
         }
     }
-
+    
+    // 
     componentDidMount() {
+        const userId = localStorage.getItem("credentials")
+        console.log(userId)
         // get all prints from database
         // get all users from database
         printAPIManager.getAll("prints")
             .then((prints) => {
                 printAPIManager.getAll("users")
                     .then((users) => {
+                        // use find to find the user who is currently logged in
                         // array method to find adminstrator in users array and store them into a variable
-                        const administrator = users.find(user => user.isAdmin === true)
-                        console.log(administrator)
+                        const loggedInUser = users.find(user => user.id === Number(userId))
+                        console.log(loggedInUser)
                         console.log(prints)
                         // set prints array in database to state
                         // set user to administrator
                         this.setState({
                             prints: prints,
-                            user: administrator
+                            user: loggedInUser
                         })
                     })
             })
@@ -51,16 +53,17 @@ class PrintsList extends Component {
     }
 
     render() {
+        console.log(this.state.user)
         return (
             <>
                 <section className="section-content">
                     {/* conditional that shows button if admin is in state */}
-                    {this.state.user.isAdmin} ?
+                    {this.state.user.isAdmin ?
                         <button type="button"
                             className="addNewInventoryBTN"
                             onClick={() => { this.props.history.push("/prints/new") }}>
                             Add New Inventory
-                        </button> : null}
+                        </button> : null }
                 </section>
                 <h1><u>Prints</u></h1>
                 <div className="container-cards">

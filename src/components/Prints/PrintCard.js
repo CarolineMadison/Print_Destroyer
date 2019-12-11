@@ -14,15 +14,17 @@ class PrintCard extends Component {
   }
 
   componentDidMount() {
+    const userId = localStorage.getItem("credentials")
+    console.log(userId)
     // get all users from database
     printAPIManager.getAll("users")
       .then((users) => {
         // array method to find adminstrator in users array and store them into a variable
-        const administrator = users.find(user => user.isAdmin === true)
-        console.log(administrator)
+        const loggedInUser = users.find(user => user.id === Number(userId))
+        console.log(loggedInUser)
         // set user to administrator
         this.setState({
-          user: administrator
+          user: loggedInUser
         })
       })
   }
@@ -31,18 +33,21 @@ class PrintCard extends Component {
     return (
       <div className="card">
         <div className="card-content">
-          <h5 className="printTitle"><b>{this.props.print.title}</b></h5>
+          <h2 className="printTitle"><b>"{this.props.print.title}"</b></h2>
           <img src={this.props.print.photo} alt="Screen Print" />
-          <Link to={`/prints/${this.props.print.id}`}><button>Details</button></Link>
+          <br />
+          <br />
+          <Link to={`/prints/${this.props.print.id}`}><button className="detailsButton">Details</button></Link>
+          <br />
+          <br />
           {/* conditional that shows button if admin is in state */}
-          {this.state.user.isAdmin} ?
-          <>
+          {this.state.user.isAdmin ?
             <div className="deleteAndEditButtons">
+              <br />
               <button type="button" onClick={() => this.props.delete(this.props.print.id)}>Delete</button>
               <button type="button" onClick={() => { this.props.history.push(`/prints/${this.props.print.id}/edit`) }}>Edit</button>
-            </div>
-            : null }
-          </>
+              <br />
+            </div> : null }
         </div>
       </div>
     )

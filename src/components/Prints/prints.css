@@ -3,7 +3,7 @@
 .card-content {
     background-color: #d4dcdc;
     border: black solid 2px;
-    margin: 0 75px 10px 75px;
+    padding: 0 75px 10px 75px;
     padding-bottom: 30px;
 }
 
@@ -12,7 +12,7 @@
 }
 
 img {
-    width: 25%;
+    width: 100%;
 }
 
 .addNewInventoryBTN {
@@ -37,5 +37,12 @@ h1 {
 }
 
 .deleteAndEditButtons {
-    background-color: #d4dcdc;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.detailsButton {
+    background-color: black;
 }
