@@ -45,6 +45,7 @@ class PrintCard extends Component {
             <div className="deleteAndEditButtons">
               <br />
               <button type="button" onClick={() => this.props.delete(this.props.print.id)}>Delete</button>
+              <hr />
               <button type="button" onClick={() => { this.props.history.push(`/prints/${this.props.print.id}/edit`) }}>Edit</button>
               <br />
             </div> : null }
