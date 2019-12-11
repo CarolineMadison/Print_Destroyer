@@ -18,7 +18,7 @@ class UploadPrintForm extends Component {
         stateToChange[evt.target.id] = evt.target.value;
         this.setState(stateToChange);
     };
-  
+
     constructNewPoster = evt => {
         evt.preventDefault();
         if (this.state.title === "") {
@@ -42,7 +42,7 @@ class UploadPrintForm extends Component {
                         photo: url
                     }
                     return printAPIManager.post(newPoster)
-                    .then(() => this.props.history.push('/prints'));
+                        .then(() => this.props.history.push('/prints'));
                 })
         }
     }
@@ -51,9 +51,11 @@ class UploadPrintForm extends Component {
 
         return (
             <>
-                <form>
-                    <fieldset>
+                <form >
+                    <fieldset className="uploadPrintForm">
                         <div className="formgrid">
+                            <label htmlFor="title">Title:</label>
+                            <br />
                             <input
                                 type="text"
                                 required
@@ -61,24 +63,45 @@ class UploadPrintForm extends Component {
                                 id="title"
                                 placeholder="title"
                             />
-                            <label htmlFor="title">Title</label>
-                            {/* <input
+                            <br />
+                            <br />
+                            <label htmlFor="description">Description: </label>
+                            <br />
+                            <input
                                 type="text"
                                 required
                                 onChange={this.handleFieldChange}
-                                id="dimentions"
-                                placeholder="Dimentions"
+                                id="description"
+                                placeholder="description"
                             />
-                            <label htmlFor="dimentions">Dimentions</label> */}
+                            <br />
+                            <br />
+                            <label htmlFor="description">Cost: </label>
+                            <br />
                             <input
-                            type="file"
-                            placeholder="Photo"
-                            onChange={(e) => this.setState({ photo: e.target.files[0] })}
+                                type="text"
+                                required
+                                onChange={this.handleFieldChange}
+                                id="cost"
+                                placeholder="cost"
                             />
-                        {/* <label>Print Photo</label> */}
+                            <br />
+                            <br />
+                            <div className="uploadImageField">
+                                <label htmlFor="photo">Print Image: </label>
+                                <input
+                                    type="file"
+                                    placeholder="Photo"
+                                    className="photoFileSearchButton"
+                                    onChange={(e) => this.setState({ photo: e.target.files[0] })}
+                                />
+                            </div>
+                            {/* <label>Print Photo</label> */}
                         </div>
-                        <div className="alignRight">
-                            <button
+                        <br />
+                        <br />
+                        <div>
+                            <button className="uploadNewPrintSubmitButton"
                                 type="button"
                                 disabled={this.state.loadingStatus}
                                 onClick={this.constructNewPoster}
