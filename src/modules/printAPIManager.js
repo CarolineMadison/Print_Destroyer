@@ -2,14 +2,14 @@ const remoteURL = "http://localhost:5002"
 
 export default {
 
-  get(id) {
-    return fetch(`${remoteURL}/prints/${id}`).then(result => result.json())
+  get(component, id) {
+    return fetch(`${remoteURL}/${component}/${id}`).then(result => result.json())
   },
   getAll(component) {
     return fetch(`${remoteURL}/${component}`).then(result => result.json())
   },
-  post(newPoster) {
-    return fetch(`${remoteURL}/posters`, {
+  post(component, newPoster) {
+    return fetch(`${remoteURL}/${component}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -20,5 +20,11 @@ export default {
   checkUser(email, password) {
     return fetch(`${remoteURL}/users?email=${email}&password=${password}`)
       .then(response => response.json())
+  },
+  delete(component, id) {
+    return fetch(`${remoteURL}/${component}/${id}`, {
+      method: "DELETE"
+    })
+      .then(result => result.json())
   }
 }
