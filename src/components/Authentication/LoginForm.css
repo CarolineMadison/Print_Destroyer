@@ -32,16 +32,11 @@ label {
 }
 
 button {
+    color: #d4dcdc;
     font-family: 'Cinzel', serif;
-    justify-content: center;
-    /* width: 200px; height: 25px; */
     font-weight: bolder;
     font-size: large;
-    color: white;
-    border: solid black;
-    background-color: black;
 }
-
 .welcomeScreenButtons {
     display: flex;
     flex-direction: column;
@@ -53,7 +48,6 @@ input {
 
 .logoImage {
     width: 50%;
-    
     padding-top: 30px;
 }
 
