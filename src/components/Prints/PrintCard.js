@@ -9,7 +9,7 @@ class PrintCard extends Component {
     return (
       <div className="card">
         <div className="card-content">
-          <h5><b>{this.props.print.title}</b></h5>
+          <h5 className="printTitle"><b>{this.props.print.title}</b></h5>
           <img src={this.props.print.photo} alt="Screen Print" />
           {/* <Link to={`/animals/${this.props.animal.id}`}><button>Details</button></Link> */}
           {/* <button type="button" onClick={() => this.props.deleteAnimal(this.props.animal.id)}>Discharge</button>

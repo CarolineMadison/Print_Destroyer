@@ -2,6 +2,7 @@ import { Route, Redirect } from 'react-router-dom'
 import React, { Component } from 'react'
 import LoginForm from './Authentication/LoginForm';
 import PrintsList from './Prints/PrintsList';
+import UploadPrintForm from './Prints/UploadPrintForm';
 
 class ApplicationViews extends Component {
 
@@ -20,6 +21,13 @@ class ApplicationViews extends Component {
                 <Route exact path="/prints" render={(props) => {
                 if (this.props.user) {
                     return <PrintsList {...props} />
+                } else {
+                    return <Redirect to="/" />
+                }
+                }} />
+                <Route path="/prints/new" render={(props) => {
+                if (this.props.user) {
+                    return <UploadPrintForm {...props} />
                 } else {
                     return <Redirect to="/" />
                 }

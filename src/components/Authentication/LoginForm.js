@@ -39,7 +39,7 @@ class LoginForm extends Component {
             </picture>
             <form onSubmit={this.handleLogin}>
                 <fieldset>
-                    <p>Jim Madison's</p>
+                    <p>Jim Madison</p>
                     <h3><u>Print Destroyer</u></h3>
                     <div className="formgrid">
                         <h5>Email:</h5>
