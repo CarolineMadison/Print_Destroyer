@@ -6,10 +6,8 @@ import printAPIManager from '../../modules/printAPIManager';
 class UploadPrintForm extends Component {
     state = {
         title: "",
-        dimentions: "",
         cost: "",
         description: "",
-        sold: false,
         photo: null,
         loadingStatus: false,
     };
@@ -93,4 +91,4 @@ class UploadPrintForm extends Component {
     }
 }
 
-export default UploadPrintForm
+export default UploadPrintForm;
