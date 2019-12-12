@@ -4,6 +4,9 @@ import LoginForm from './Authentication/LoginForm';
 import PrintsList from './Prints/PrintsList';
 import UploadPrintForm from './Prints/UploadPrintForm';
 import PrintDetails from './Prints/PrintDetails';
+import CreateNewAccountForm from './Authentication/CreateNewAccountForm';
+import CreateNewUserProfileForm from './Customers&Users /CreateNewUserProfileForm';
+
 
 class ApplicationViews extends Component {
 
@@ -17,6 +20,9 @@ class ApplicationViews extends Component {
                 } else {
                     return <LoginForm setUser={this.props.setUser} {...props} />
                 }
+                }} />
+                <Route path="/users/new" render={(props) => {
+                    return <CreateNewAccountForm {...props} />
                 }} />
                 {/* PRINTS */}
                 <Route exact path="/prints" render={(props) => {
@@ -47,6 +53,10 @@ class ApplicationViews extends Component {
                         // above is the same as key value pairs on props (below) from react-router-dom and passes it as props to print detail
                         {...props}
                     />
+                }} />
+                {/* CUSTOMERS AND USERS */}
+                <Route exact path="/profile/new" render={(props) => {
+                    return <CreateNewUserProfileForm {...props} {...this.props} />
                 }} />
             </React.Fragment>
         )

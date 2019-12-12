@@ -8,13 +8,13 @@ export default {
   getAll(component) {
     return fetch(`${remoteURL}/${component}`).then(result => result.json())
   },
-  post(component, newPoster) {
+  post(component, newObject) {
     return fetch(`${remoteURL}/${component}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(newPoster)
+      body: JSON.stringify(newObject)
     }).then(data => data.json())
   },
   checkUser(email, password) {
@@ -26,5 +26,23 @@ export default {
       method: "DELETE"
     })
       .then(result => result.json())
-  }
+  },
+  // patch(tableName, objectToPatch) {
+  //   return fetch(`${remoteURL}/${tableName}/${objectToPatch}`, {
+  //     method: "PATCH",
+  //     headers: {
+  //       "Content-Type": "application/json"
+  //     },
+  //     body: JSON.stringify(objectToPatch)
+  //   }).then(data => data.json())
+  // }
+  patch(id, obj) {
+    return fetch(`${remoteURL}/users/${id}`, {
+        method: "PATCH",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(obj)
+    }).then(data => data.json())
+}
 }
