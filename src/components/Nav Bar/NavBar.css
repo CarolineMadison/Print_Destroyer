@@ -3,7 +3,6 @@
 
 .headerContainer {
   background-color:  black;
-  border-radius: 8px;
 }
 
 nav.navBar {
@@ -11,9 +10,8 @@ nav.navBar {
     flex-wrap: wrap;
 }
 
-.logoImage {
-    width: 25%;
-    margin-bottom: -30px;
+navBar.li {
+flex-direction: column;
 }
 
 .navBar a:hover {
@@ -22,13 +20,12 @@ nav.navBar {
 
 .navBar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     color: white;
 }
 
 nav li {
     list-style-type: none;
-    display: inline;
     font-size: 20px;
     font-family: 'Cinzel', serif;
 }
@@ -38,28 +35,5 @@ a {
 }
 
 .nav-link {
-    display: flex;
-    justify-content: space-evenly;
     color: goldenrod;
-    flex-direction: row;
-
 }
-
-h4 {
-    font-family: 'Cinzel', serif;
-    font-size: 28px;
-    margin-top: 70px;
-    margin-bottom: -40px;
-    margin-left: -5px;
-    text-shadow: 3px 3px 3px maroon;
-}
-
-#jim {
-    font-size: 15px;
-    margin-bottom: -2px;
-}
-
-
-
-
-
