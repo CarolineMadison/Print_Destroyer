@@ -13,7 +13,7 @@ nav.navBar {
 
 .logoImage {
     width: 25%;
-    /* margin-bottom: -190px; */
+    margin-bottom: -30px;
 }
 
 .navBar a:hover {
@@ -30,7 +30,6 @@ nav li {
     list-style-type: none;
     display: inline;
     font-size: 20px;
-    padding: 0px 70px 5px 10px;
     font-family: 'Cinzel', serif;
 }
 
@@ -39,7 +38,11 @@ a {
 }
 
 .nav-link {
+    display: flex;
+    justify-content: space-evenly;
     color: goldenrod;
+    flex-direction: row;
+
 }
 
 h4 {

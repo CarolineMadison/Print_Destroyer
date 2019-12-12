@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from "react-router-dom"
-// import './NavBar.css'
+import './NavBar.css'
 import { isUserWhitespacable } from '@babel/types';
 
 class NavBar extends Component {
@@ -18,7 +18,6 @@ class NavBar extends Component {
         <div className="headerContainer">
           {/* <picture>
             <img className="logoImage" src={require('./printDestroyerMainLogo.png')} alt="Print Destroyer Logo" />
-            <h4><p id="jim"></p>Print Destroyer | An Art Print Sharing App</h4>
           </picture> */}
           <nav className="navBar">
             <ul className="navList">
