@@ -5,8 +5,8 @@ import PrintsList from './Prints/PrintsList';
 import UploadPrintForm from './Prints/UploadPrintForm';
 import PrintDetails from './Prints/PrintDetails';
 import CreateNewAccountForm from './Authentication/CreateNewAccountForm';
-import CreateNewUserProfileForm from './Customers&Users /CreateNewUserProfileForm';
 import ProfileCard from './CustomersAreUsersWithProfiles /ProfileCard';
+import CreateNewUserProfileForm from './CustomersAreUsersWithProfiles /CreateNewUserProfileForm';
 
 class ApplicationViews extends Component {
 
