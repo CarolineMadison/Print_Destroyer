@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import * as firebase from 'firebase/app';
 import 'firebase/storage';
 import printAPIManager from '../../modules/printAPIManager';
+import { thisTypeAnnotation } from '@babel/types';
 
 class UploadPrintForm extends Component {
     state = {
@@ -21,7 +22,7 @@ class UploadPrintForm extends Component {
 
     constructNewPoster = evt => {
         evt.preventDefault();
-        if (this.state.title === "") {
+        if (this.state.title === "" | this.state.cost === "" | this.state.description === "" | this.state.photo === "") {
             window.alert("Please enter information for all fields.");
         } else {
             this.setState({ loadingStatus: true });
@@ -35,13 +36,11 @@ class UploadPrintForm extends Component {
                 .then(url => {
                     const newPoster = {
                         title: this.state.title,
-                        dimentions: this.state.dimentions,
                         cost: this.state.cost,
                         description: this.state.description,
-                        sold: this.state.sold,
                         photo: url
                     }
-                    return printAPIManager.post(newPoster)
+                    return printAPIManager.post("prints", newPoster)
                         .then(() => this.props.history.push('/prints'));
                 })
         }
@@ -96,7 +95,6 @@ class UploadPrintForm extends Component {
                                     onChange={(e) => this.setState({ photo: e.target.files[0] })}
                                 />
                             </div>
-                            {/* <label>Print Photo</label> */}
                         </div>
                         <br />
                         <br />
