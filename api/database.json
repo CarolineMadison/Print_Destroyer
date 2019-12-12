@@ -45,25 +45,81 @@
   ],
   "prints": [
     {
-      "id": 1,
       "title": "Effigy",
-      "photo": "https://www.danceartsbg.com/images/Pictures/Bio_Photos/Martha.jpg",
-      "description": "3 color silkscreen art print",
-      "cost": 38
+      "cost": "$38.00",
+      "description": "10”x20” 3 color silkscreen art print",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576130992788?alt=media&token=ab5efdc0-6042-469e-aee9-15721c0a115e",
+      "id": 1
     },
     {
-      "id": 2,
-      "title": "Bone Mazinga",
-      "photo": "https://www.danceartsbg.com/images/Pictures/Bio_Photos/Martha.jpg",
-      "description": "silkscreen monoprint",
-      "cost": 78
+      "title": "I Love You to the Max",
+      "cost": "$38.00",
+      "description": "16”x20” signed and numbered edition of 33 5 color silkscreen art print inspired by the Silver Jews song “Punks in the Beerlight”.",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576131278555?alt=media&token=7a702eb7-cdd8-4391-8e96-b61e2c6ab06a",
+      "id": 2
     },
     {
-      "id": 3,
+      "title": "Heroes Villains",
+      "cost": "$38.00",
+      "description": "10”x20” four color silkscreen signed and numbered edition of twelve art print.",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576131509801?alt=media&token=125946bf-294b-462b-939b-11f083cd215b",
+      "id": 3
+    },
+    {
+      "title": "The Great",
+      "cost": "$38.00",
+      "description": "10”x20” three color signed and numbered edition of twelve silkscreen art print.",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576131679670?alt=media&token=b7679f12-c069-4d1a-aafd-eccacac6d6bd",
+      "id": 4
+    },
+    {
+      "title": " + -",
+      "cost": "$38.00",
+      "description": "16”x20” eight color silkscreen print edition of twelve art print.",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576131842937?alt=media&token=f01ee326-ec52-42ac-b2c7-1c59118c7929",
+      "id": 5
+    },
+    {
+      "title": "The Latest Menace to the Human Race",
+      "cost": "$38.00",
+      "description": "10”x20” three color silkscreen edition of twelve art print.",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576131960945?alt=media&token=2976ab28-07b7-4e9b-a562-fd2f519af82b",
+      "id": 6
+    },
+    {
+      "title": "Skeleton Black Heart 2",
+      "cost": "$78.00",
+      "description": "10”x20” one of a kind silkscreen monoprint.",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576132091892?alt=media&token=d2031b7c-75e9-493a-9a07-af99d5b0567e",
+      "id": 7
+    },
+    {
       "title": "No! Not Her!",
-      "photo": "https://www.danceartsbg.com/images/Pictures/Bio_Photos/Martha.jpg",
-      "description": "color silkscreen",
-      "cost": 38
+      "cost": "$38.00",
+      "description": "16”x20” 5 color silkscreen signed and numbered edition of 25 art print.",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576132329329?alt=media&token=afd6ff92-7767-4658-a470-0d731757c21d",
+      "id": 8
+    },
+    {
+      "title": "Clauss 3",
+      "cost": "$78.00",
+      "description": "10”x20” one of a kind silkscreen monoprint.",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576132477300?alt=media&token=f2a86756-000f-40b2-8177-bf777cc2a02a",
+      "id": 9
+    },
+    {
+      "title": "Bunny El",
+      "cost": "$78.00",
+      "description": "16”x20” one of a kind silkscreen monoprint.",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576132611612?alt=media&token=978c4d04-bfa0-4b05-a8c0-9f0a5ac03b2e",
+      "id": 10
+    },
+    {
+      "title": "Doomed",
+      "cost": "$78.00",
+      "description": "10”x20” one of a kind silkscreen monoprint.",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576132811231?alt=media&token=e8c35431-21eb-41c1-a463-eff55c86300d",
+      "id": 11
     }
   ],
   "wishlist": [

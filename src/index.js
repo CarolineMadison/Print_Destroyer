@@ -18,6 +18,7 @@ var firebaseConfig = {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  
 
 ReactDOM.render(
   <Router>
