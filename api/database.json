@@ -26,7 +26,7 @@
       "address": "104 Doral Ln, Hendersonville, TN 37075",
       "phone": "615-555-5555",
       "bio": "I'm a creative writer and software engineer in Nashville, Tennessee.",
-      "favorite quote": "'She wanted something to happen - something, anything: she did not know what.' by Kate Chopin"
+      "favoriteQuote": "'She wanted something to happen - something, anything: she did not know what.' by Kate Chopin"
     },
     {
       "id": 3,
@@ -40,7 +40,23 @@
       "address": "500 Pedigo Way, Bowling Green, KY 42014",
       "phone": "270-555-2222",
       "bio": "I'm a business owner and dancer. I've owned Dance Arts of Bowling Green since the age of 19.",
-      "favorite quote": "'Dance is for everybody. I believe that the dance came from the people and that it should always be delivered back to the people.' by Alvin Ailey"
+      "favoriteQuote": "'Dance is for everybody. I believe that the dance came from the people and that it should always be delivered back to the people.' by Alvin Ailey"
+    },
+    {
+      "name": "Doug Boomer",
+      "email": "dougBoomer@gmail.com",
+      "password": "Boomer",
+      "confirmPassword": "Boomer",
+      "isAdmin": false,
+      "hasProfile": false,
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2FDoug%20Boomer-1576172266487?alt=media&token=003d8e5e-fb7f-4070-8fa5-a16116650c32",
+      "id": 4,
+      "businessName": "Doug's Mountainside Adventures",
+      "address": "105 Mountaintop Way, Missoula, MT",
+      "phone": "615-555-5555",
+      "bio": "I like adventure, good beer, good food, and good women.",
+      "favoriteQuote": "Running is Stupid. - Charlie Taylor",
+      "userId": "4"
     }
   ],
   "prints": [

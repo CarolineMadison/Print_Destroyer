@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import "./LoginForm.css"
 import printAPIManager from "../../modules/printAPIManager"
+import { Link } from "react-router-dom";
 
 class LoginForm extends Component {
 
@@ -61,9 +62,14 @@ class LoginForm extends Component {
                         <button id="enterButton" type="submit" onClick={this.handleLogin}>
                             Log In
                         </button>
-                        <button type="submit" onClick={this.handleLogin}>
+                        {/* type="submit" onClick={this.createNewAccount}>
                             Create An Account 
-                        </button>
+                        </button> */}
+                        <Link to={`/users/new`}>
+                            <button className="createNewAccountButton">
+                                Create An Account
+                            </button>
+                        </Link>
                     </div>
                 </fieldset>
             </form>
