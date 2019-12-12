@@ -47,15 +47,15 @@ input {
 }
 
 .logoImage {
-    width: 50%;
-    padding-top: 30px;
+    width: 65%;
+    /* padding-top: 30px; */
 }
 
-div#root {
+/* div#root {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 
 button#enterButton {
     margin-top: 6%;

@@ -52,7 +52,7 @@ class PrintDetails extends Component {
         return (
             <div className="card" >
                 <div className="card-content">
-                    <img src={this.state.photo} alt="Screen Print" />
+                    <img className="screenPrintDetailsPhoto" src={this.state.photo} alt="Screen Print" />
                     <h2 className="printTitle"><b>"{this.state.title}"</b></h2>
                     <br />
                     <br />

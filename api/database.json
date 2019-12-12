@@ -120,6 +120,27 @@
       "description": "10”x20” one of a kind silkscreen monoprint.",
       "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576132811231?alt=media&token=e8c35431-21eb-41c1-a463-eff55c86300d",
       "id": 11
+    },
+    {
+      "title": "Keep My Eyes Above The Waves",
+      "cost": "$38.00",
+      "description": "10”x20” 4 color silkscreen art print.",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576135735320?alt=media&token=64d8d8cd-4f10-4af8-bb0b-753693646f20",
+      "id": 12
+    },
+    {
+      "title": "Escape Tower",
+      "cost": "$78.00",
+      "description": "16”x20” one of a kind silkscreen monoprint .",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576155052784?alt=media&token=6b63d9f9-6192-4794-bffd-ad87e0322953",
+      "id": 13
+    },
+    {
+      "title": "bunny",
+      "cost": "30",
+      "description": "something",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576157091411?alt=media&token=d8d0970e-8f2c-4de5-8be5-7bbcfca5ffd7",
+      "id": 14
     }
   ],
   "wishlist": [

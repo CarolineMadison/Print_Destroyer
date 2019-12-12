@@ -22,8 +22,12 @@
     color: black;
 }
 
-img {
+.screenPrintPhoto {
     width: 100%;
+}
+
+.screenPrintDetailsPhoto {
+    width: 100%
 }
 
 .addNewInventoryBTN {

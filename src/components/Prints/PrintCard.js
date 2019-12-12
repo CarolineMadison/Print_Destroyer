@@ -33,7 +33,7 @@ class PrintCard extends Component {
     return (
       <div className="card">
         <div className="card-content">
-          <img src={this.props.print.photo} alt="Screen Print" />
+          <img className="screenPrintPhoto" src={this.props.print.photo} alt="Screen Print" />
           <h2 className="printTitle"><b>"{this.props.print.title}"</b></h2>
           <br />
           <br />
