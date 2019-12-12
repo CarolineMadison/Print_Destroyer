@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import "./CreateNewUserProfile.css"
 import printAPIManager from '../../modules/printAPIManager';
 
 class CreateNewUserProfileForm extends Component {
