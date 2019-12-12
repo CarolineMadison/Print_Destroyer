@@ -6,7 +6,7 @@ import UploadPrintForm from './Prints/UploadPrintForm';
 import PrintDetails from './Prints/PrintDetails';
 import CreateNewAccountForm from './Authentication/CreateNewAccountForm';
 import CreateNewUserProfileForm from './Customers&Users /CreateNewUserProfileForm';
-
+import ProfileCard from './CustomersAreUsersWithProfiles /ProfileCard';
 
 class ApplicationViews extends Component {
 
@@ -55,8 +55,15 @@ class ApplicationViews extends Component {
                     />
                 }} />
                 {/* CUSTOMERS AND USERS */}
-                <Route exact path="/profile/new" render={(props) => {
+                <Route path="/profile/new" render={(props) => {
                     return <CreateNewUserProfileForm {...props} {...this.props} />
+                }} />
+                <Route exact path="/profile" render={(props) => {
+                if (this.props.user) {
+                    return <ProfileCard {...props} />
+                } else {
+                    return <Redirect to="/" />
+                }
                 }} />
             </React.Fragment>
         )
