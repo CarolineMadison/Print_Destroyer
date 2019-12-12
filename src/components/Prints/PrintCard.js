@@ -15,13 +15,11 @@ class PrintCard extends Component {
 
   componentDidMount() {
     const userId = localStorage.getItem("credentials")
-    console.log(userId)
     // get all users from database
     printAPIManager.getAll("users")
       .then((users) => {
         // array method to find adminstrator in users array and store them into a variable
         const loggedInUser = users.find(user => user.id === Number(userId))
-        console.log(loggedInUser)
         // set user to administrator
         this.setState({
           user: loggedInUser
@@ -37,7 +35,7 @@ class PrintCard extends Component {
           <h2 className="printTitle"><b>"{this.props.print.title}"</b></h2>
           <br />
           <br />
-          <Link to={`/prints/${this.props.print.id}`}><button className="detailsButton">Details</button></Link>
+          <Link to={`/prints/${this.props.print.id}`}><button className="printDetailsButton">Details</button></Link>
           <br />
           <br />
           {/* conditional that shows button if admin is in state */}

@@ -18,7 +18,6 @@ class PrintsList extends Component {
     // 
     componentDidMount() {
         const userId = localStorage.getItem("credentials")
-        console.log(userId)
         // get all prints from database
         // get all users from database
         printAPIManager.getAll("prints")
@@ -28,8 +27,6 @@ class PrintsList extends Component {
                         // use find to find the user who is currently logged in
                         // array method to find adminstrator in users array and store them into a variable
                         const loggedInUser = users.find(user => user.id === Number(userId))
-                        console.log(loggedInUser)
-                        console.log(prints)
                         // set prints array in database to state
                         // set user to administrator
                         this.setState({
@@ -53,7 +50,6 @@ class PrintsList extends Component {
     }
 
     render() {
-        console.log(this.state.user)
         return (
             <>
                 <section className="section-content">

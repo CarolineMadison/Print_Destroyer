@@ -42,8 +42,6 @@ class ApplicationViews extends Component {
                 <Route exact path="/prints/:printId(\d+)" render={(props) => {
                     // passed from react-router-dom to print detail component
                     // kind of the same as event.target.value (Vanilla javaScript)
-                    console.log("Props from react-router-dom", props)
-                    console.log("This component's props", this.props)
                     // Pass the printId to Print Details
                     return <PrintDetails
                         printId={parseInt(props.match.params.printId)}

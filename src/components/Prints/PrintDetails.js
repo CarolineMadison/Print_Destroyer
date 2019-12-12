@@ -17,7 +17,6 @@ class PrintDetails extends Component {
 
     componentDidMount() {
         const userId = localStorage.getItem("credentials")
-        console.log(userId)
         //get(id) from printAPIManager and hang on to the data; put it into state
         printAPIManager.get("prints", this.props.printId)
             .then((print) => {
@@ -26,8 +25,6 @@ class PrintDetails extends Component {
                         // use find to find the user who is currently logged in
                         // array method to find adminstrator in users array and store them into a variable
                         const loggedInUser = users.find(user => user.id === Number(userId))
-                        console.log(loggedInUser)
-                        console.log(print)
                         this.setState({
                             title: print.title,
                             description: print.description,
@@ -57,14 +54,15 @@ class PrintDetails extends Component {
                     <br />
                     <br />
                     {this.state.user.isAdmin ?
-                        <div className="deleteAndEditButtons">
+                        <div>
                             <br />
-                            <button type="button" onClick={() => this.props.delete(this.props.print.id)}>Delete</button>
-                            <hr />
-                            <button type="button" onClick={() => { this.props.history.push(`/prints/${this.props.print.id}/edit`) }}>Edit</button>
+                            <button type="button" className="printDeleteButton" onClick={() => this.props.delete(this.props.print.id)}>Delete Print</button>
+                            <br />
+                            <br />
+                            <button type="button" className="printEditButton" onClick={() => { this.props.history.push(`/prints/${this.props.print.id}/edit`) }}>Edit Print</button>
                             <br />
                         </div> :
-                        <button type="button" class="button button-like" onClick={() => { this.props.history.push("/wishlist") }}><i class="fa fa-heart"></i><span>Like</span></button>
+                        <button type="button" className="button button-like" onClick={() => { this.props.history.push("/wishlist") }}><i className="fa fa-heart"></i><span>Like</span></button>
                     }
                     <br />
                     <br />
