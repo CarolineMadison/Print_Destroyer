@@ -25,6 +25,7 @@ class ProfileCard extends Component {
     }
 
     render() {
+        console.log(this.state)
         return (
             <div className="card">
                 <div className="card-content">

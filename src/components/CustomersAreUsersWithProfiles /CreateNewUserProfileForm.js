@@ -10,7 +10,6 @@ class CreateNewUserProfileForm extends Component {
         bio: "",
         favoriteQuote: "",
         loadingStatus: false,
-        // userId: ""
     };
 
     handleFieldChange = evt => {
@@ -36,8 +35,9 @@ class CreateNewUserProfileForm extends Component {
             }
             // Create the user profile and redirect user to their profile
             printAPIManager.patch(userId, objectToPatch)
+            
                 .then(() => this.props.history.push("/profile"));
-        }
+        }   
     }  
 
     render() {

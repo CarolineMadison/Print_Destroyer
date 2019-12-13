@@ -23,7 +23,7 @@ class CreateNewAccountForm extends Component {
         stateToChange[evt.target.id] = evt.target.value;
         this.setState(stateToChange);
     };
-  
+
     constructNewAccount = evt => {
         evt.preventDefault();
         if (this.state.name === "" || this.state.email === "" || this.state.password === "" || this.state.confirmPassword === "" || this.state.photo === "") {
@@ -48,92 +48,96 @@ class CreateNewAccountForm extends Component {
                         photo: url
                     }
                     return printAPIManager.post("users", newAccount)
-                    .then((something) => {
-                        console.log(something)
+                    .then((user) => {
+                        console.log(user)
+                        const userId = user.id
+                        console.log(userId)
+                        localStorage.setItem("credentials", userId)
+                        this.props.history.push("/profile/new");
                     })
-                    .then(() => this.props.history.push('/profile/new'));
                 })
         }
-    }
+ }
 
-    // setuser logic in this component
-    render() {
 
-        return (
-            <>
-                <h1><u>Create A New Account</u></h1>
-                <form onSubmit={this.handleLogin}>
-                    <fieldset className="uploadPrintForm">
-                        <div className="formgrid">
-                            <label htmlFor="title">Name: </label>
-                            <br />
-                            <input
-                                type="text"
-                                required
-                                onChange={this.handleFieldChange}
-                                id="name"
-                                placeholder="name"
-                            />
-                            <br />
-                            <br />
-                            <label htmlFor="email">Email: </label>
-                            <br />
-                            <input
-                                type="text"
-                                required
-                                onChange={this.handleFieldChange}
-                                id="email"
-                                placeholder="email"
-                            />
-                            <br />
-                            <br />
-                            <label htmlFor="password">Password: </label>
-                            <br />
-                            <input
-                                type="text"
-                                required
-                                onChange={this.handleFieldChange}
-                                id="password"
-                                placeholder="password"
-                            />
-                            <br />
-                            <br />
-                            <label htmlFor="confirmPassword">Confirm Password: </label>
-                            <br />
-                            <input
-                                type="text"
-                                required
-                                onChange={this.handleFieldChange}
-                                id="confirmPassword"
-                                placeholder="confirmPassword"
-                            />
-                            <br />
-                            <br />
-                            <div className="uploadImageField">
-                                <label htmlFor="photo">Upload A Profile Picture: </label>
-                                <input
-                                    type="file"
-                                    placeholder="photo"
-                                    className="photoFileSearchButton"
-                                    onChange={(e) => this.setState({ photo: e.target.files[0] })}
-                                />
-                            </div>
-                        </div>
+// setuser logic in this component
+render() {
+
+    return (
+        <>
+            <h1><u>Create A New Account</u></h1>
+            <form >
+                <fieldset className="uploadPrintForm">
+                    <div className="formgrid">
+                        <label htmlFor="title">Name: </label>
+                        <br />
+                        <input
+                            type="text"
+                            required
+                            onChange={this.handleFieldChange}
+                            id="name"
+                            placeholder="name"
+                        />
                         <br />
                         <br />
-                        <div>
-                            <button className="uploadNewPrintSubmitButton"
-                                type="button"
-                                disabled={this.state.loadingStatus}
-                                onClick={this.constructNewAccount}
-                                 
-                            >Enter</button>
+                        <label htmlFor="email">Email: </label>
+                        <br />
+                        <input
+                            type="text"
+                            required
+                            onChange={this.handleFieldChange}
+                            id="email"
+                            placeholder="email"
+                        />
+                        <br />
+                        <br />
+                        <label htmlFor="password">Password: </label>
+                        <br />
+                        <input
+                            type="password"
+                            required
+                            onChange={this.handleFieldChange}
+                            id="password"
+                            placeholder="password"
+                        />
+                        <br />
+                        <br />
+                        <label htmlFor="confirmPassword">Confirm Password: </label>
+                        <br />
+                        <input
+                            type="password"
+                            required
+                            onChange={this.handleFieldChange}
+                            id="confirmPassword"
+                            placeholder="confirmPassword"
+                        />
+                        <br />
+                        <br />
+                        <div className="uploadImageField">
+                            <label htmlFor="photo">Upload A Profile Picture: </label>
+                            <input
+                                type="file"
+                                placeholder="photo"
+                                className="photoFileSearchButton"
+                                onChange={(e) => this.setState({ photo: e.target.files[0] })}
+                            />
                         </div>
-                    </fieldset>
-                </form>
-            </>
-        )
-    }
+                    </div>
+                    <br />
+                    <br />
+                    <div>
+                        <button className="uploadNewPrintSubmitButton"
+                            type="button"
+                            disabled={this.state.loadingStatus}
+                            onClick={this.constructNewAccount}
+
+                        >Enter</button>
+                    </div>
+                </fieldset>
+            </form>
+        </>
+    )
+}
 }
 
 export default CreateNewAccountForm;
