@@ -23,6 +23,7 @@ class LoginForm extends Component {
     e.preventDefault()
     printAPIManager.checkUser(this.state.email, this.state.password)
     .then(results => {
+        console.log(results)
         if(results.length > 0) {
             this.props.setUser(results)
             this.props.history.push("/prints");

@@ -43,7 +43,7 @@ class NavBar extends Component {
                 <>
                   <li><Link className="nav-link" to="/profile">Profile</Link></li>
                   <li><Link className="nav-link" to="/prints">Prints</Link></li>
-                  <li><Link className="nav-link" to="/">Wish List</Link></li>
+                  <li><Link className="nav-link" to="/wishlist">Wish List</Link></li>
                   <li><Link className="nav-link" onClick={this.handleLogout}>Log Out</Link></li>
                   <hr />
                 </>

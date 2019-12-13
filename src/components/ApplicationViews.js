@@ -16,7 +16,7 @@ class ApplicationViews extends Component {
                 {/* AUTHENTICATION */}
                 <Route exact path="/" render={(props) => {
                 if (this.props.user) {
-                    return <Redirect to="/prints" {...props} {...this.props} />
+
                 } else {
                     return <LoginForm setUser={this.props.setUser} {...props} />
                 }
@@ -54,14 +54,10 @@ class ApplicationViews extends Component {
                 }} />
                 {/* CUSTOMERS AND USERS */}
                 <Route path="/profile/new" render={(props) => {
-                    return <CreateNewUserProfileForm {...props}/>
+                    return <CreateNewUserProfileForm {...props} />
                 }} />
                 <Route exact path="/profile" render={(props) => {
-                if (this.props.user) {
-                    return <ProfileCard {...props} />
-                } else {
-                    return <Redirect to="/" />
-                }
+                        return <ProfileCard {...props}/>
                 }} />
             </React.Fragment>
         )
