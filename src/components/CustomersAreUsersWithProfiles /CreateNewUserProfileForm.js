@@ -38,9 +38,7 @@ class CreateNewUserProfileForm extends Component {
             printAPIManager.patch(userId, objectToPatch)
                 .then(() => this.props.history.push("/profile"));
         }
-    }
-        
-    
+    }  
 
     render() {
 

@@ -22,7 +22,7 @@ class ApplicationViews extends Component {
                 }
                 }} />
                 <Route path="/users/new" render={(props) => {
-                    return <CreateNewAccountForm {...props} />
+                    return <CreateNewAccountForm {...props} setUser={this.props.setUser} />
                 }} />
                 {/* PRINTS */}
                 <Route exact path="/prints" render={(props) => {
@@ -54,7 +54,7 @@ class ApplicationViews extends Component {
                 }} />
                 {/* CUSTOMERS AND USERS */}
                 <Route path="/profile/new" render={(props) => {
-                    return <CreateNewUserProfileForm {...props} {...this.props} />
+                    return <CreateNewUserProfileForm {...props}/>
                 }} />
                 <Route exact path="/profile" render={(props) => {
                 if (this.props.user) {

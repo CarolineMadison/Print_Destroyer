@@ -39,7 +39,7 @@ class PrintDetails extends Component {
     }
 
     handleDelete = () => {
-        //invoke the delete function in AnimalManger and re-direct to the animal list.
+        //invoke the delete function in API and re-direct to the print list
         this.setState({ loadingStatus: true })
         printAPIManager.delete("prints", this.props.printId)
             .then(() => this.props.history.push("/prints"))

@@ -26,16 +26,7 @@ export default {
       method: "DELETE"
     })
       .then(result => result.json())
-  },
-  // patch(tableName, objectToPatch) {
-  //   return fetch(`${remoteURL}/${tableName}/${objectToPatch}`, {
-  //     method: "PATCH",
-  //     headers: {
-  //       "Content-Type": "application/json"
-  //     },
-  //     body: JSON.stringify(objectToPatch)
-  //   }).then(data => data.json())
-  // }
+  }, 
   patch(id, obj) {
     return fetch(`${remoteURL}/users/${id}`, {
         method: "PATCH",
@@ -44,5 +35,5 @@ export default {
         },
         body: JSON.stringify(obj)
     }).then(data => data.json())
-}
+  }
 }

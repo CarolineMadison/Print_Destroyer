@@ -28,7 +28,7 @@ class PrintDestroyer extends Component {
     this.setState({user: this.isAuthenticated()})
   }
 
-  componenetDidMount() {
+  componentDidMount() {
     this.setState({
       user: this.isAuthenticated()
     })

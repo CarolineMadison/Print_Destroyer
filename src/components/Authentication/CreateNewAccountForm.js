@@ -48,17 +48,21 @@ class CreateNewAccountForm extends Component {
                         photo: url
                     }
                     return printAPIManager.post("users", newAccount)
+                    .then((something) => {
+                        console.log(something)
+                    })
                     .then(() => this.props.history.push('/profile/new'));
                 })
         }
     }
 
+    // setuser logic in this component
     render() {
 
         return (
             <>
                 <h1><u>Create A New Account</u></h1>
-                <form >
+                <form onSubmit={this.handleLogin}>
                     <fieldset className="uploadPrintForm">
                         <div className="formgrid">
                             <label htmlFor="title">Name: </label>
@@ -122,6 +126,7 @@ class CreateNewAccountForm extends Component {
                                 type="button"
                                 disabled={this.state.loadingStatus}
                                 onClick={this.constructNewAccount}
+                                 
                             >Enter</button>
                         </div>
                     </fieldset>
