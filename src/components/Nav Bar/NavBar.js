@@ -39,15 +39,22 @@ class NavBar extends Component {
         <div className="headerContainer">
           <nav className="navBar">
             <ul className="navList">
-              {(this.props.user) ?
-                <>
+              {localStorage.getItem("credentials") !== null ?
+                <> 
                   <li><Link className="nav-link" to="/profile">Profile</Link></li>
                   <li><Link className="nav-link" to="/prints">Prints</Link></li>
                   <li><Link className="nav-link" to="/wishlist">Wish List</Link></li>
                   <li><Link className="nav-link" onClick={this.handleLogout}>Log Out</Link></li>
                   <hr />
                 </>
-                : null
+                :
+                  <>
+                  <li><Link className="nav-link" to="/profile">Profile</Link></li>
+                  <li><Link className="nav-link" to="/prints">Inventory</Link></li>
+                  <li><Link className="nav-link" to="/customers">Customers</Link></li>
+                  <li><Link className="nav-link" onClick={this.handleLogout}>Log Out</Link></li>
+                  <hr />
+                  </>
               }
             </ul>
           </nav>
@@ -57,3 +64,9 @@ class NavBar extends Component {
       }
     }
 export default withRouter(NavBar);
+
+// if someone logged in show nav
+
+// if someone logged in is Jim show different nav
+
+// else null

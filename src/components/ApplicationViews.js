@@ -16,7 +16,7 @@ class ApplicationViews extends Component {
                 {/* AUTHENTICATION */}
                 <Route exact path="/" render={(props) => {
                 if (this.props.user) {
-
+                    return <Redirect to="/prints" {...props} {...this.props} />
                 } else {
                     return <LoginForm setUser={this.props.setUser} {...props} />
                 }
@@ -26,18 +26,14 @@ class ApplicationViews extends Component {
                 }} />
                 {/* PRINTS */}
                 <Route exact path="/prints" render={(props) => {
-                if (this.props.user) {
                     return <PrintsList {...props} />
-                } else {
-                    return <Redirect to="/" />
-                }
                 }} />
                 <Route path="/prints/new" render={(props) => {
-                if (this.props.user) {
+                // if (this.props.user) {
                     return <UploadPrintForm {...props} />
-                } else {
-                    return <Redirect to="/" />
-                }
+                // } else {
+                //     return <Redirect to="/" />
+                // }
                 }} />
                 <Route exact path="/prints/:printId(\d+)" render={(props) => {
                     // passed from react-router-dom to print detail component
@@ -54,10 +50,10 @@ class ApplicationViews extends Component {
                 }} />
                 {/* CUSTOMERS AND USERS */}
                 <Route path="/profile/new" render={(props) => {
-                    return <CreateNewUserProfileForm {...props} />
+                    return <CreateNewUserProfileForm {...props}/>
                 }} />
                 <Route exact path="/profile" render={(props) => {
-                        return <ProfileCard {...props}/>
+                    return <ProfileCard {...props} />
                 }} />
             </React.Fragment>
         )
