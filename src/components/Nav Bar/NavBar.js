@@ -24,13 +24,14 @@ class NavBar extends Component {
           user: loggedInUser
         })
       })
-  }
+    }
 
   handleLogout = () => {
     this.props.clearUser();
     this.props.history.push("/");
   }
 
+  // FRIDAY:  WE WANT THE NAVBAR TO CHANGE DEPENDING ON IF A REGULAR USER IS SIGNED IN (SAME NAV), IF IT'S THE ADMIN WHO IS LOGGED IN (DIFFERENT NAV), AND IF NO ONE IS LOGGED IN (NO NAV)
   render() {
 
     return (
@@ -42,7 +43,7 @@ class NavBar extends Component {
                 <>
                   <li><Link className="nav-link" to="/profile">Profile</Link></li>
                   <li><Link className="nav-link" to="/prints">Prints</Link></li>
-                  <li><Link className="nav-link" to="/customers">Wish List</Link></li>
+                  <li><Link className="nav-link" to="/">Wish List</Link></li>
                   <li><Link className="nav-link" onClick={this.handleLogout}>Log Out</Link></li>
                   <hr />
                 </>

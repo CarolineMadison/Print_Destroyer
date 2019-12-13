@@ -15,20 +15,6 @@
       "favoriteQuote": "'Art is what you can get away with.' by Andy Warhol"
     },
     {
-      "id": 2,
-      "name": "Caroline Brownlee",
-      "photo": "https://www.instagram.com/p/B5YR9OzhaY1/",
-      "email": "brownleecaroline@gmail.com",
-      "password": "Caroline",
-      "isAdmin": false,
-      "hasProfile": true,
-      "businessName": "Caroline Madison Writer",
-      "address": "104 Doral Ln, Hendersonville, TN 37075",
-      "phone": "615-555-5555",
-      "bio": "I'm a creative writer and software engineer in Nashville, Tennessee.",
-      "favoriteQuote": "'She wanted something to happen - something, anything: she did not know what.' by Kate Chopin"
-    },
-    {
       "id": 3,
       "name": "Martha Madison",
       "photo": "https://www.danceartsbg.com/images/Pictures/Bio_Photos/Martha.jpg",
@@ -57,6 +43,16 @@
       "bio": "I like adventure, good beer, good food, and good women.",
       "favoriteQuote": "'Running is Stupid.' - Charlie Taylor",
       "userId": "4"
+    },
+    {
+      "name": "Doug",
+      "email": "ishot@gmail.com",
+      "password": "doug",
+      "confirmPassword": "doug",
+      "isAdmin": false,
+      "hasProfile": false,
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2FDoug-1576259837389?alt=media&token=63aa9201-f1d5-43a0-9e3b-36115004b577",
+      "id": 5
     }
   ],
   "prints": [

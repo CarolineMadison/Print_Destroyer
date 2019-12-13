@@ -47,6 +47,15 @@ class ProfileCard extends Component {
                         <p className="profileEmail">{this.state.user.email}</p>
                         <br />
                         <p className="profilePhone">{this.state.user.phone}</p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <button type="button" className="profileDeleteButton" onClick={() => this.props.delete(this.props.user.id)}>Delete Account</button>
+                        <br />
+                        <br />
+                        <button type="button" className="profileEditButton" onClick={() => { this.props.history.push(`/profile/${this.props.user.id}/edit`) }}>Edit Profile</button>
                     </div>
                 </div>
             </div>

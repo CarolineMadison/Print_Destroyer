@@ -5,8 +5,8 @@ import PrintsList from './Prints/PrintsList';
 import UploadPrintForm from './Prints/UploadPrintForm';
 import PrintDetails from './Prints/PrintDetails';
 import CreateNewAccountForm from './Authentication/CreateNewAccountForm';
-import CreateNewUserProfileForm from './Customers&Users /CreateNewUserProfileForm';
 import ProfileCard from './CustomersAreUsersWithProfiles /ProfileCard';
+import CreateNewUserProfileForm from './CustomersAreUsersWithProfiles /CreateNewUserProfileForm';
 
 class ApplicationViews extends Component {
 
@@ -22,7 +22,7 @@ class ApplicationViews extends Component {
                 }
                 }} />
                 <Route path="/users/new" render={(props) => {
-                    return <CreateNewAccountForm {...props} />
+                    return <CreateNewAccountForm {...props} setUser={this.props.setUser} />
                 }} />
                 {/* PRINTS */}
                 <Route exact path="/prints" render={(props) => {
@@ -42,8 +42,6 @@ class ApplicationViews extends Component {
                 <Route exact path="/prints/:printId(\d+)" render={(props) => {
                     // passed from react-router-dom to print detail component
                     // kind of the same as event.target.value (Vanilla javaScript)
-                    console.log("Props from react-router-dom", props)
-                    console.log("This component's props", this.props)
                     // Pass the printId to Print Details
                     return <PrintDetails
                         printId={parseInt(props.match.params.printId)}
@@ -56,7 +54,7 @@ class ApplicationViews extends Component {
                 }} />
                 {/* CUSTOMERS AND USERS */}
                 <Route path="/profile/new" render={(props) => {
-                    return <CreateNewUserProfileForm {...props} {...this.props} />
+                    return <CreateNewUserProfileForm {...props}/>
                 }} />
                 <Route exact path="/profile" render={(props) => {
                 if (this.props.user) {
