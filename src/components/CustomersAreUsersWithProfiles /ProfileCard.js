@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 import './profiles.css'
 import printAPIManager from '../../modules/printAPIManager'
 
-
 class ProfileCard extends Component {
 
     state = {
@@ -26,6 +25,7 @@ class ProfileCard extends Component {
 
     render() {
         console.log(this.state)
+        console.log(this.state.user.id)
         return (
             <div className="card">
                 <div className="card-content">
@@ -36,18 +36,21 @@ class ProfileCard extends Component {
                         <br />
                         <br />
                         <br />
-                        <h2 className="profileAboutMeTitle">About Me: </h2>
+                        <h2 className="profileAboutMeTitle">About Me: </h2><br />
                         <p className="profileBio">{this.state.user.bio}</p>
                         <br />
                         <br />
                         <br />
+                        <h2 className="profileAboutMeTitle">Contact: </h2>
                         <p className="profileBusinessName">{this.state.user.businessName}</p>
+                        <br />
                         <br />
                         <p className="profileAddress">{this.state.user.address}</p>
                         <br />
+                        <p className="profilePhone">{this.state.user.phone}</p>
+                        <br />
                         <p className="profileEmail">{this.state.user.email}</p>
                         <br />
-                        <p className="profilePhone">{this.state.user.phone}</p>
                         <br />
                         <br />
                         <br />
@@ -56,7 +59,7 @@ class ProfileCard extends Component {
                         <button type="button" className="profileDeleteButton" onClick={() => this.props.delete(this.props.user.id)}>Delete Account</button>
                         <br />
                         <br />
-                        <button type="button" className="profileEditButton" onClick={() => { this.props.history.push(`/profile/${this.props.user.id}/edit`) }}>Edit Profile</button>
+                        <button type="button" className="profileEditButton" onClick={() => { this.props.history.push(`/profile/users/${this.state.user.id}/edit`) }}>Edit Profile</button>
                     </div>
                 </div>
             </div>
