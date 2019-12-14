@@ -15,18 +15,32 @@
       "confirmPassword": "jimmy"
     },
     {
-      "name": "Jack",
-      "email": "jack@gmail.com",
-      "password": "jack",
-      "confirmPassword": "jack",
-      "isAdmin": false,
-      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2FJack-1576263919253?alt=media&token=e982605c-2ed7-4a55-8ae3-35579501d737",
       "id": 2,
+      "name": "Joseph",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2FJack-1576263919253?alt=media&token=e982605c-2ed7-4a55-8ae3-35579501d737",
       "businessName": "Jack and Jill",
-      "address": "104 Toddler Way, Nashville, TN",
-      "phone": "555-555-5555",
       "bio": "We went up the hill.",
-      "favoriteQuote": "'Don't fall down,' - Jack"
+      "phone": "555-555-5555",
+      "favoriteQuote": "'Don't fall down,' - Jack",
+      "address": "104 Toddler Way, Nashville, TN",
+      "email": "jack@gmail.com",
+      "isAdmin": false,
+      "password": "jack",
+      "confirmPassword": "jack"
+    },
+    {
+      "id": 3,
+      "name": "Caroline Madison",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2FCaroline%20Madison-1576338360059?alt=media&token=59bd5968-cf2b-4bab-a470-7897364939f2",
+      "businessName": "Caroline's App Shop",
+      "bio": "Creative Writer - Software Engineer",
+      "phone": "615-681-7778",
+      "favoriteQuote": "'And moreover, to succeed, the artist must possess the courageous soul.' - Kate Chopin",
+      "address": "104 Doral Ln, Hendersonville, TN 37075",
+      "email": "brownleecaroline@gmail.com",
+      "isAdmin": false,
+      "password": "caroline",
+      "confirmPassword": "caroline"
     }
   ],
   "prints": [

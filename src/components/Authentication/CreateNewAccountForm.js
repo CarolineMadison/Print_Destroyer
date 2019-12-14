@@ -126,12 +126,12 @@ render() {
                     <br />
                     <br />
                     <div>
-                        <button className="uploadNewPrintSubmitButton"
+                        <button className="createNewUserProfileButton"
                             type="button"
                             disabled={this.state.loadingStatus}
                             onClick={this.constructNewAccount}
 
-                        >Enter</button>
+                        >Submit</button>
                     </div>
                 </fieldset>
             </form>

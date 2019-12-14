@@ -107,10 +107,11 @@ class CreateNewUserProfileForm extends Component {
                         <div className="alignRight">
                             <br />
                             <button
+                                className="createNewUserProfileButton"
                                 type="button"
                                 disabled={this.state.loadingStatus}
                                 onClick={this.createNewUserProfile}
-                            >Submit</button>
+                            >Enter</button>
                         </div>
                     </fieldset>
                 </form>
