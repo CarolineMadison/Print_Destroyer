@@ -7,6 +7,9 @@ import PrintDetails from './Prints/PrintDetails';
 import CreateNewAccountForm from './Authentication/CreateNewAccountForm';
 import ProfileCard from './CustomersAreUsersWithProfiles /ProfileCard';
 import CreateNewUserProfileForm from './CustomersAreUsersWithProfiles /CreateNewUserProfileForm';
+import PrintEditForm from './Prints/PrintEditForm';
+import ProfileEditForm from './CustomersAreUsersWithProfiles /ProfileEditForm';
+
 
 class ApplicationViews extends Component {
 
@@ -15,11 +18,11 @@ class ApplicationViews extends Component {
             <React.Fragment>
                 {/* AUTHENTICATION */}
                 <Route exact path="/" render={(props) => {
-                if (this.props.user) {
-                    return <Redirect to="/prints" {...props} {...this.props} />
-                } else {
-                    return <LoginForm setUser={this.props.setUser} {...props} />
-                }
+                    if (this.props.user) {
+                        return <Redirect to="/prints" {...props} {...this.props} />
+                    } else {
+                        return <LoginForm setUser={this.props.setUser} {...props} />
+                    }
                 }} />
                 <Route path="/users/new" render={(props) => {
                     return <CreateNewAccountForm {...props} setUser={this.props.setUser} />
@@ -29,32 +32,36 @@ class ApplicationViews extends Component {
                     return <PrintsList {...props} />
                 }} />
                 <Route path="/prints/new" render={(props) => {
-                // if (this.props.user) {
+                    // if (this.props.user) {
                     return <UploadPrintForm {...props} />
-                // } else {
-                //     return <Redirect to="/" />
-                // }
+                    // } else {
+                    //     return <Redirect to="/" />
+                    // }
                 }} />
                 <Route exact path="/prints/:printId(\d+)" render={(props) => {
-                    // passed from react-router-dom to print detail component
-                    // kind of the same as event.target.value (Vanilla javaScript)
-                    // Pass the printId to Print Details
                     return <PrintDetails
                         printId={parseInt(props.match.params.printId)}
-                        // history={props.history}
-                        // match={props.match}
-                        // location={props.location}
-                        // above is the same as key value pairs on props (below) from react-router-dom and passes it as props to print detail
                         {...props}
                     />
                 }} />
+                <Route path="/prints/:printId(\d+)/edit" render={props => {
+                        return <PrintEditForm {...props} />
+                    }}
+                />
                 {/* CUSTOMERS AND USERS */}
                 <Route path="/profile/new" render={(props) => {
-                    return <CreateNewUserProfileForm {...props}/>
+                    return <CreateNewUserProfileForm {...props} />
                 }} />
                 <Route exact path="/profile" render={(props) => {
-                    return <ProfileCard {...props} />
+                    return <ProfileCard 
+                    userId={parseInt(props.match.params.userId)}
+                    {...this.props}
+                    {...props}
+                    />
                 }} />
+                <Route path="/profile/users/:userId(\d+)/edit" render={props => {
+                    return <ProfileEditForm {...props}/>
+                }}/>
             </React.Fragment>
         )
     }

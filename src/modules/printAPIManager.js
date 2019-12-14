@@ -35,5 +35,23 @@ export default {
         },
         body: JSON.stringify(obj)
     }).then(data => data.json())
+  },
+  update(component, editedObject) {
+    return fetch(`${remoteURL}/${component}/${editedObject.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(editedObject)
+    }).then(data => data.json());
+  },
+  updateProfile(component, editedObject) {
+    return fetch(`${remoteURL}/${component}/${editedObject.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(editedObject)
+    }).then(data => data.json());
   }
 }

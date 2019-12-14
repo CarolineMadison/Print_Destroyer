@@ -38,25 +38,21 @@ class PrintDetails extends Component {
             })
     }
 
-    handleDelete = () => {
-        //invoke the delete function in API and re-direct to the print list
-        this.setState({ loadingStatus: true })
-        printAPIManager.delete("prints", this.props.printId)
-            .then(() => this.props.history.push("/prints"))
-    }
-
     render() {
         return (
             <div className="card" >
                 <div className="card-content">
                     <img className="screenPrintDetailsPhoto" src={this.state.photo} alt="Screen Print" />
                     <h2 className="printTitle"><b>"{this.state.title}"</b></h2>
+                    <p className="printDescription">{this.state.description}</p>
                     <br />
                     <br />
+                    <p className="printCost">{this.state.cost}</p>
+                    <br />
+                    <br />
+                    {/* conditional that shows button if admin is in state */}
                     {this.state.user.isAdmin ?
                         <div>
-                            <br />
-                            <button type="button" className="printDeleteButton" onClick={() => this.props.delete(this.props.print.id)}>Delete Print</button>
                             <br />
                             <br />
                             <button type="button" className="printEditButton" onClick={() => { this.props.history.push(`/prints/${this.props.print.id}/edit`) }}>Edit Print</button>
@@ -64,9 +60,6 @@ class PrintDetails extends Component {
                         </div> :
                         <button type="button" className="button button-like" onClick={() => { this.props.history.push("/wishlist") }}><i className="fa fa-heart"></i><span>Like</span></button>
                     }
-                    <br />
-                    <br />
-                    {/* conditional that shows button if admin is in state */}
                 </div>
             </div>
         )

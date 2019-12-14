@@ -5,7 +5,6 @@ import PrintCard from './PrintCard'
 import printAPIManager from '../../modules/printAPIManager'
 import './prints.css'
 
-
 class PrintsList extends Component {
     //define what this component needs to render
     state = {
@@ -37,7 +36,7 @@ class PrintsList extends Component {
             })
     }
 
-    deletePrint = id => {
+    delete = id => {
         printAPIManager.delete("prints", id)
             .then(() => {
                 printAPIManager.getAll("prints")
