@@ -26,6 +26,7 @@ class ProfileCard extends Component {
     render() {
         console.log(this.state)
         console.log(this.state.user.id)
+        const userId = localStorage.getItem("credentials")
         return (
             <div className="card">
                 <div className="card-content">
@@ -56,7 +57,9 @@ class ProfileCard extends Component {
                         <br />
                         <br />
                         <br />
+                        {Number(userId) !== 1 ?
                         <button type="button" className="profileDeleteButton" onClick={() => this.props.delete(this.props.user.id)}>Delete Account</button>
+                        : null }
                         <br />
                         <br />
                         <button type="button" className="profileEditButton" onClick={() => { this.props.history.push(`/profile/users/${this.state.user.id}/edit`) }}>Edit Profile</button>
