@@ -9,6 +9,8 @@ import ProfileCard from './CustomersAreUsersWithProfiles /ProfileCard';
 import CreateNewUserProfileForm from './CustomersAreUsersWithProfiles /CreateNewUserProfileForm';
 import PrintEditForm from './Prints/PrintEditForm';
 import ProfileEditForm from './CustomersAreUsersWithProfiles /ProfileEditForm';
+import CustomerList from './CustomersAreUsersWithProfiles /CustomerList';
+
 
 
 class ApplicationViews extends Component {
@@ -62,6 +64,9 @@ class ApplicationViews extends Component {
                 <Route path="/profile/users/:userId(\d+)/edit" render={props => {
                     return <ProfileEditForm {...props}/>
                 }}/>
+                <Route exact path="/customers" render={(props) => {
+                    return <CustomerList {...props} />
+                }} />
             </React.Fragment>
         )
     }
