@@ -4,6 +4,7 @@ import './profiles.css'
 class CustomerCard extends Component {
 
   render() {
+      const userId = localStorage.getItem("credentials")
     return (
         <div className="card">
             <div className="card-content">
