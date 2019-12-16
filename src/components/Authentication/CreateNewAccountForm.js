@@ -49,9 +49,7 @@ class CreateNewAccountForm extends Component {
                     }
                     return printAPIManager.post("users", newAccount)
                     .then((user) => {
-                        console.log(user)
                         const userId = user.id
-                        console.log(userId)
                         localStorage.setItem("credentials", userId)
                         this.props.history.push("/profile/new");
                     })
