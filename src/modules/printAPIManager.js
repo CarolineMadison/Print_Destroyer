@@ -53,5 +53,8 @@ export default {
       },
       body: JSON.stringify(editedObject)
     }).then(data => data.json());
+  },
+  getAllWishlistItems() {
+    return fetch(`${remoteURL}/wishlist/?_expand=user&_expand=print`).then(result => result.json())
   }
 }

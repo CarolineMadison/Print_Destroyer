@@ -10,8 +10,7 @@ import CreateNewUserProfileForm from './CustomersAreUsersWithProfiles /CreateNew
 import PrintEditForm from './Prints/PrintEditForm';
 import ProfileEditForm from './CustomersAreUsersWithProfiles /ProfileEditForm';
 import CustomerList from './CustomersAreUsersWithProfiles /CustomerList';
-
-
+import WishListList from './WishList/WishListList';
 
 class ApplicationViews extends Component {
 
@@ -47,25 +46,28 @@ class ApplicationViews extends Component {
                     />
                 }} />
                 <Route path="/prints/:printId(\d+)/edit" render={props => {
-                        return <PrintEditForm {...props} />
-                    }}
+                    return <PrintEditForm {...props} />
+                }}
                 />
                 {/* CUSTOMERS AND USERS */}
                 <Route path="/profile/new" render={(props) => {
                     return <CreateNewUserProfileForm {...props} />
                 }} />
                 <Route exact path="/profile" render={(props) => {
-                    return <ProfileCard 
-                    userId={parseInt(props.match.params.userId)}
-                    {...this.props}
-                    {...props}
+                    return <ProfileCard
+                        userId={parseInt(props.match.params.userId)}
+                        {...this.props}
+                        {...props}
                     />
                 }} />
                 <Route path="/profile/users/:userId(\d+)/edit" render={props => {
-                    return <ProfileEditForm {...props}/>
-                }}/>
+                    return <ProfileEditForm {...props} />
+                }} />
                 <Route exact path="/customers" render={(props) => {
                     return <CustomerList {...props} />
+                }} />
+                <Route exact path="/wishlist" render={(props) => {
+                    return <WishListList {...props} />
                 }} />
             </React.Fragment>
         )
