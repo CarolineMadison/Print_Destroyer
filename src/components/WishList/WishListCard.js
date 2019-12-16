@@ -1,15 +1,11 @@
 // this component handles rendering jsx for a single wishlist item
-// jsx that will render a single print card for logged in user print id in wishlist (wishlist.printId)
 
 import React, { Component } from 'react'
-// import './prints.css'
 
 class WishListCard extends Component {
 
-    // FOR LOGGED IN USER, RENDER PRINTS IN WISHLIST
     render() {
-        console.log(this.props.result.print)
-        console.log(this.props.result.id)
+
         return (
             <div className="card">
                 <div className="card-content">

@@ -20,7 +20,6 @@ class WishListList extends Component {
                 const userId = localStorage.getItem("credentials")
                 const wishListForLoggedInUser = results.filter(result => result.user.id === Number(userId))
                 console.log(wishListForLoggedInUser)
-                // console.log(results)
                 this.setState({
                     wishlist: wishListForLoggedInUser
                 })
@@ -31,33 +30,37 @@ class WishListList extends Component {
         printAPIManager.delete("wishlist", id)
             .then(() => {
                 printAPIManager.getAllWishlistItems("wishlist")
-                    .then((newWishList) => {
+                    .then((results) => {
+                        console.log(results)
+                        const userId = localStorage.getItem("credentials")
+                        const newWishListForLoggedInUser = results.filter(result => result.user.id === Number(userId))
                         this.setState({
-                            wishlist: newWishList
+                            wishlist: newWishListForLoggedInUser
                         })
                     })
             })
     }
 
-    render() {
-        console.log(this.state.wishlist)
-        return (
-            <>
-                <h1><u>Wish List</u></h1>
-                <div className="container-cards">
-                    {/* map over wishList array in state and for each item renders a print card */}
-                    {this.state.wishlist.map(result =>
-                        <WishListCard
-                            key={result.id}
-                            result={result}
-                            delete={this.delete}
-                            {...this.props}
-                        />
-                    )}
-                </div>
-            </>
-        )
-    }
+
+render() {
+    console.log(this.state.wishlist)
+    return (
+        <>
+            <h1><u>Wish List</u></h1>
+            <div className="container-cards">
+                {/* map over wishList array in state and for each item renders a print card */}
+                {this.state.wishlist.map(result =>
+                    <WishListCard
+                        key={result.id}
+                        result={result}
+                        delete={this.delete}
+                        {...this.props}
+                    />
+                )}
+            </div>
+        </>
+    )
+}
 }
 
 export default WishListList;

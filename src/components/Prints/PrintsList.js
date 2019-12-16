@@ -20,7 +20,7 @@ class PrintsList extends Component {
         // get all prints from database
         // get all users from database
         printAPIManager.getAll("prints")
-            .then((prints) => {
+            .then((prints) => { 
                 printAPIManager.getAll("users")
                     .then((users) => {
                         // use find to find the user who is currently logged in

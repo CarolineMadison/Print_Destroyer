@@ -9,11 +9,6 @@ class PrintDestroyer extends Component {
     user: false
   }
 
-  // Check if credentials are in local storage
-  // Returns true/false
-  // Want NavBar and App Views to be dependent on logged in user
-  // isAuthenticated checks if credentials are in local storage
-  // returns true/false
   isAuthenticated = () => localStorage.getItem("credentials") !== null
 
   setUser = (results) => {
@@ -29,12 +24,6 @@ class PrintDestroyer extends Component {
   }
 
   componentDidMount() {
-    this.setState({
-      user: this.isAuthenticated()
-    })
-  }
-
-  componentWillMount() {
     this.setState({
       user: this.isAuthenticated()
     })
