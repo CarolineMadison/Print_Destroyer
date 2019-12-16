@@ -4,7 +4,6 @@ import './profiles.css'
 class CustomerCard extends Component {
 
   render() {
-      const userId = localStorage.getItem("credentials")
     return (
         <div className="card">
             <div className="card-content">
@@ -31,10 +30,6 @@ class CustomerCard extends Component {
                     <p className="profileEmail">{this.props.user.email}</p>
                     <br />
                     <br />
-                    <br />
-                    <br />
-                        <button type="button" className="profileEditButton" onClick={() => { this.props.history.push(`/profile/users/${this.state.user.id}/edit`) }}>Edit Profile</button>
-                        <button type="button" className="profileDeleteButton" onClick={() => this.props.delete(this.props.user.id)}>Delete Account</button>
                     </div>
                 </div>
             </div>

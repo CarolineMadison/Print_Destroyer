@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "name": "Jim Madison",
+      "name": "Jim",
       "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2FJim-1576265126893?alt=media&token=5ac451a5-bbe2-488f-9a95-4fe2c7f53b3c",
       "businessName": "Print Destroyer",
       "bio": "I'm a screen print artist and skateboarder. Welcome to my APP!",
@@ -55,6 +55,21 @@
       "isAdmin": false,
       "password": "boomer",
       "confirmPassword": "boomer"
+    },
+    {
+      "name": "Samantha Whatever Her Name",
+      "email": "sam@gmail.com",
+      "password": "sa,",
+      "confirmPassword": "sam",
+      "isAdmin": false,
+      "hasProfile": false,
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2FSamantha%20Whatever%20Her%20Name-1576530444473?alt=media&token=ac5fe9d7-e7cc-4dbf-92fd-3ad3a2862fa9",
+      "id": 5,
+      "businessName": "MY business",
+      "address": "none of yours",
+      "phone": "222-222-2222",
+      "bio": "I am a person.",
+      "favoriteQuote": "cool."
     }
   ],
   "prints": [
@@ -124,14 +139,24 @@
   ],
   "wishlist": [
     {
-      "userId": "4",
-      "printId": 4,
-      "id": 7
+      "userId": 5,
+      "printId": 8,
+      "id": 11
     },
     {
-      "userId": "3",
+      "userId": 5,
+      "printId": 5,
+      "id": 12
+    },
+    {
+      "userId": 3,
       "printId": 1,
-      "id": 8
+      "id": 13
+    },
+    {
+      "userId": 2,
+      "printId": 1,
+      "id": 14
     }
   ]
 }

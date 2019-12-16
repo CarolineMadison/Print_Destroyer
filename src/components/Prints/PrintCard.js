@@ -31,7 +31,7 @@ class PrintCard extends Component {
     console.log(this.props)
     const userId = localStorage.getItem("credentials")
     const newWishListItem = {
-      userId: userId,
+      userId: Number(userId),
       printId: this.props.print.id
     }
     printAPIManager.post("wishlist", newWishListItem)
@@ -39,8 +39,6 @@ class PrintCard extends Component {
   }
 
 render() {
-  console.log(this.props.print.id)
-  console.log(this.state.user.id)
   return (
     <div className="card">
       <div className="card-content">

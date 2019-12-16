@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 import LoginForm from './Authentication/LoginForm';
 import PrintsList from './Prints/PrintsList';
 import UploadPrintForm from './Prints/UploadPrintForm';
-import PrintDetails from './Prints/PrintDetails';
 import CreateNewAccountForm from './Authentication/CreateNewAccountForm';
 import ProfileCard from './CustomersAreUsersWithProfiles /ProfileCard';
 import CreateNewUserProfileForm from './CustomersAreUsersWithProfiles /CreateNewUserProfileForm';
@@ -38,12 +37,6 @@ class ApplicationViews extends Component {
                     // } else {
                     //     return <Redirect to="/" />
                     // }
-                }} />
-                <Route exact path="/prints/:printId(\d+)" render={(props) => {
-                    return <PrintDetails
-                        printId={parseInt(props.match.params.printId)}
-                        {...props}
-                    />
                 }} />
                 <Route path="/prints/:printId(\d+)/edit" render={props => {
                     return <PrintEditForm {...props} />
