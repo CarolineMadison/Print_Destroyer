@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import printAPIManager from '../../modules/printAPIManager';
 
+
 class PrintDetails extends Component {
 
     state = {
