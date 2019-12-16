@@ -12,25 +12,16 @@ class CustomerList extends Component {
         users: []
     }
 
-    // 
+    // get all users and set that to state
     componentDidMount() {
-        // const userId = localStorage.getItem("credentials")
-        // get all prints from database
-        // get all users from database
-        // printAPIManager.getAll("prints")
-        //     .then((prints) => {
         printAPIManager.getAll("users")
-            .then((users) => {
-                // use find to find the user who is currently logged in
-                // array method to find adminstrator in users array and store them into a variable
-                // const loggedInUser = users.find(user => user.id === Number(userId))
-                // set prints array in database to state
-                // set user to administrator
-                this.setState({
-                    users: users
-                })
+        .then((users) => {
+            const listOfCustomers = users.filter(user => user.isAdmin === false)
+            console.log(listOfCustomers)
+            this.setState({
+                users: listOfCustomers
             })
-        // })
+        })
     }
 
     delete = id => {

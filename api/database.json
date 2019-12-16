@@ -124,14 +124,14 @@
   ],
   "wishlist": [
     {
-      "id": 1,
-      "userId": 2,
-      "printId": 3
-    },
-    {
       "userId": "4",
       "printId": 4,
       "id": 7
+    },
+    {
+      "userId": "3",
+      "printId": 1,
+      "id": 8
     }
   ]
 }
