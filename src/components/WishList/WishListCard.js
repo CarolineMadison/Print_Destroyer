@@ -9,6 +9,7 @@ class WishListCard extends Component {
     // FOR LOGGED IN USER, RENDER PRINTS IN WISHLIST
     render() {
         console.log(this.props.result.print)
+        console.log(this.props.result.id)
         return (
             <div className="card">
                 <div className="card-content">
@@ -24,7 +25,7 @@ class WishListCard extends Component {
                     <br />
                     <br />
                     {/* this button needs delete functionality to unlike and remove from wishlist */}
-                    <button type="button" className="button button-like" onClick={this.createNewWishlistItem}><i className="fa fa-heart"></i><span>Unlike</span></button>
+                    <button type="button" className="button button-like" onClick={() => this.props.delete(this.props.result.id)}><i className="fa fa-heart"></i><span>Unlike</span></button>
                 </div>
             </div>
 
