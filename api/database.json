@@ -41,6 +41,20 @@
       "isAdmin": false,
       "password": "caroline",
       "confirmPassword": "caroline"
+    },
+    {
+      "id": 4,
+      "name": "Doug Boomer",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2FDoug%20Boomer-1576514935336?alt=media&token=d0702a9c-f8ed-43be-b06c-ddf9763d270b",
+      "businessName": "Boomer's Mountainside Adventures",
+      "bio": "I enjoy adventure, good beer, good food, and a good woman.",
+      "phone": "615-555-8888",
+      "favoriteQuote": "\"When you want something, all the universe conspires in helping you to achieve it.\" - Paulo Coelho",
+      "address": "105 Boomer Way, Missoula, MT",
+      "email": "boomer@gmail.com",
+      "isAdmin": false,
+      "password": "boomer",
+      "confirmPassword": "boomer"
     }
   ],
   "prints": [
@@ -133,6 +147,21 @@
       "userId": "3",
       "printId": 1,
       "id": 5
+    },
+    {
+      "userId": "4",
+      "printId": 1,
+      "id": 6
+    },
+    {
+      "userId": "4",
+      "printId": 4,
+      "id": 7
+    },
+    {
+      "userId": "4",
+      "printId": 6,
+      "id": 8
     }
   ]
 }
