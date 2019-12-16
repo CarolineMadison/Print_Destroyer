@@ -129,39 +129,9 @@
       "printId": 3
     },
     {
-      "id": 2,
-      "userId": 2,
-      "printId": 2
-    },
-    {
-      "id": 3,
-      "userId": 3,
-      "printId": 1
-    },
-    {
-      "userId": "2",
-      "printId": 1,
-      "id": 4
-    },
-    {
-      "userId": "3",
-      "printId": 1,
-      "id": 5
-    },
-    {
-      "userId": "4",
-      "printId": 1,
-      "id": 6
-    },
-    {
       "userId": "4",
       "printId": 4,
       "id": 7
-    },
-    {
-      "userId": "4",
-      "printId": 6,
-      "id": 8
     }
   ]
 }

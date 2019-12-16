@@ -27,17 +27,17 @@ class WishListList extends Component {
             })
     }
 
-    // delete = id => {
-    //     printAPIManager.delete("users", id)
-    //         .then(() => {
-    //             printAPIManager.getAll("users")
-    //                 .then((newUsers) => {
-    //                     this.setState({
-    //                         users: newUsers
-    //                     })
-    //                 })
-    //         })
-    // }
+    delete = id => {
+        printAPIManager.delete("wishlist", id)
+            .then(() => {
+                printAPIManager.getAllWishlistItems("wishlist")
+                    .then((newWishList) => {
+                        this.setState({
+                            wishlist: newWishList
+                        })
+                    })
+            })
+    }
 
     render() {
         console.log(this.state.wishlist)
