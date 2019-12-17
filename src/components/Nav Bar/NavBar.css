@@ -1,22 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Londrina+Outline&display=swap');
 
-/* .headerContainer {
-  background-color:  black;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-} */
-
-/* .navBar {
-    display: flex;
-    flex-direction: row;
-}  */
-
-/* navBar.li {
-flex-direction: column;
-} */
-
 .navBar a:hover {
     color: maroon;
 }

@@ -55,10 +55,10 @@ class NavBar extends Component {
             <nav className="navBar">
               <ul className="navList">
                 <>
-                <div className="links"><li><Link className="nav-link" to="/profile">Profile</Link></li></div>
-                <div className="links"><li><Link className="nav-link" to="/prints">Inventory</Link></li></div>
-                <div className="links"><li><Link className="nav-link" to="/customers">Customers</Link></li></div><hr />
-                <div className="links"><li><Link className="nav-link" onClick={this.handleLogout}>Log Out</Link></li></div>
+                <div className="links-Profile"><li><Link className="nav-link" to="/profile">Profile</Link></li></div>
+                <div className="links-Prints"><li><Link className="nav-link" to="/prints">Inventory</Link></li></div>
+                <div className="links-Wishlist"><li><Link className="nav-link" to="/customers">Customers</Link></li></div><hr />
+                <div className="links-LogOut"><li><Link className="nav-link" onClick={this.handleLogout}>Log Out</Link></li></div>
                 </>
               </ul>
             </nav> : null}

@@ -94,17 +94,17 @@
       "id": 7
     },
     {
-      "title": "No! Not Her!",
-      "cost": "$38.00",
-      "description": "16”x20” 5 color silkscreen signed and numbered edition of 25 art print.",
+      "id": 8,
       "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576132329329?alt=media&token=afd6ff92-7767-4658-a470-0d731757c21d",
-      "id": 8
+      "title": "No! Not Her!",
+      "description": "16”x20” 5 color silkscreen signed and numbered edition of 25 art print.",
+      "cost": "$38.00"
     },
     {
-      "title": "Clauss 3",
+      "title": "Claus 3",
       "cost": "$78.00",
-      "description": "10”x20” one of a kind silkscreen monoprint.",
-      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576132477300?alt=media&token=f2a86756-000f-40b2-8177-bf777cc2a02a",
+      "description": "print",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576604948219?alt=media&token=6991fcb0-b2d4-462d-aa5d-63799fc5af48",
       "id": 9
     }
   ],
