@@ -23,6 +23,19 @@ class ProfileCard extends Component {
             })
     }
 
+    clearUser = () =>  {
+        localStorage.removeItem("credentials")
+      }
+
+    deleteAccount = () => {
+        const userId = localStorage.getItem("credentials")
+        printAPIManager.delete("users", userId)
+            .then(() => {
+                this.clearUser()
+                this.props.history.push("/")
+            })
+    }
+
     render() {
         console.log(this.state)
         console.log(this.state.user.id)
@@ -58,8 +71,8 @@ class ProfileCard extends Component {
                         <br />
                         <br />
                         {Number(userId) !== 1 ?
-                        <button type="button" className="profileDeleteButton" onClick={() => this.props.delete(this.props.user.id)}>Delete Account</button>
-                        : null }
+                            <button type="button" className="profileDeleteButton" onClick={() => this.deleteAccount()}>Delete Account</button>
+                            : null}
                         <br />
                         <br />
                         <button type="button" className="profileEditButton" onClick={() => { this.props.history.push(`/profile/users/${this.state.user.id}/edit`) }}>Edit Profile</button>
