@@ -41,6 +41,20 @@
       "isAdmin": false,
       "password": "boomer",
       "confirmPassword": "boomer"
+    },
+    {
+      "id": 4,
+      "name": "Caroline Brownlee",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2FCaroline%20Brownlee-1576600308124?alt=media&token=d9777b09-c681-4f4b-980a-e2b34b0a5448",
+      "businessName": "Caroline's Cool App Shop",
+      "bio": "I'm a writer and software engineer.",
+      "phone": "615-555-5555",
+      "favoriteQuote": "'And moreover, to succeed, the artist must possess the courageous soul.' - Kate Chopin",
+      "address": "Nashville Software School, Nashville, TN",
+      "email": "brownleecaroline@gmail.com",
+      "isAdmin": false,
+      "password": "caroline",
+      "confirmPassword": "caroline"
     }
   ],
   "prints": [
@@ -110,16 +124,6 @@
   ],
   "wishlist": [
     {
-      "userId": 5,
-      "printId": 8,
-      "id": 11
-    },
-    {
-      "userId": 5,
-      "printId": 5,
-      "id": 12
-    },
-    {
       "userId": 3,
       "printId": 1,
       "id": 13
@@ -128,6 +132,21 @@
       "userId": 2,
       "printId": 2,
       "id": 14
+    },
+    {
+      "userId": 4,
+      "printId": 4,
+      "id": 16
+    },
+    {
+      "userId": 4,
+      "printId": 1,
+      "id": 17
+    },
+    {
+      "userId": 4,
+      "printId": 9,
+      "id": 18
     }
   ]
 }
