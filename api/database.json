@@ -6,7 +6,7 @@
       "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2FJim-1576265126893?alt=media&token=5ac451a5-bbe2-488f-9a95-4fe2c7f53b3c",
       "businessName": "Print Destroyer",
       "bio": "I'm a screen print artist and skateboarder. Welcome to my APP!",
-      "phone": "270-555-5555",
+      "phone": "270-555-4444",
       "favoriteQuote": "'Everyone will be famous for 15 minutes.' - Andy Warhol",
       "address": "1055 Three Springs Rd, Bowling Green, KY",
       "email": "jim@printdestroyer.com",
@@ -41,6 +41,16 @@
       "isAdmin": false,
       "password": "boomer",
       "confirmPassword": "boomer"
+    },
+    {
+      "name": "asdfgs",
+      "email": "dfg",
+      "password": "sfdg",
+      "confirmPassword": "sdfg",
+      "isAdmin": false,
+      "hasProfile": false,
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fasdfgs-1576617444456?alt=media&token=a59ec812-77eb-4b56-b795-4c8e9ab17981",
+      "id": 4
     }
   ],
   "prints": [

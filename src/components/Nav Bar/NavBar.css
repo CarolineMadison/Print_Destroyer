@@ -26,7 +26,7 @@ a {
     justify-content: space-around;
     padding-left: 20px;
     padding-right: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     padding-top: 20px;
 }
 
@@ -44,4 +44,8 @@ a {
 
 .links-wishlist {
     padding-left: 10px;
+}
+
+header {
+    padding-bottom: 10px;
 }
