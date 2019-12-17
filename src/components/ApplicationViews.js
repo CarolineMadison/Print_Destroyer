@@ -50,6 +50,7 @@ class ApplicationViews extends Component {
                     return <ProfileCard
                         userId={parseInt(props.match.params.userId)}
                         {...this.props}
+                        clearUser={this.props.clearUser}
                         {...props}
                     />
                 }} />

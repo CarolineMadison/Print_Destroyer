@@ -1,21 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Londrina+Outline&display=swap');
-
-/* .headerContainer {
-  background-color:  black;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-} */
-
-/* .navBar {
-    display: flex;
-    flex-direction: row;
-}  */
-
-/* navBar.li {
-flex-direction: column;
-} */
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'); */
 
 .navBar a:hover {
     color: maroon;
@@ -23,7 +8,7 @@ flex-direction: column;
 
 nav li {
     list-style-type: none;
-    font-size: 20px;
+    font-size: 17px;
     font-family: 'Cinzel', serif;
 }
 
@@ -41,6 +26,8 @@ a {
     justify-content: space-around;
     padding-left: 20px;
     padding-right: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .div {
@@ -57,4 +44,8 @@ a {
 
 .links-wishlist {
     padding-left: 10px;
+}
+
+header {
+    padding-bottom: 10px;
 }

@@ -5,8 +5,6 @@ import React, { Component } from 'react'
 import WishListCard from './WishListCard'
 import printAPIManager from '../../modules/printAPIManager'
 
-// import './prints.css'
-
 class WishListList extends Component {
     //define what this component needs to render
     state = {
@@ -17,8 +15,10 @@ class WishListList extends Component {
         // get all users from database
         printAPIManager.getAllWishlistItems()
             .then((results) => {
+                console.log(results)
                 const userId = localStorage.getItem("credentials")
-                const wishListForLoggedInUser = results.filter(result => result.user.id === Number(userId))
+                console.log(userId)
+                const wishListForLoggedInUser = results.filter(result => result.userId === Number(userId))
                 console.log(wishListForLoggedInUser)
                 this.setState({
                     wishlist: wishListForLoggedInUser
@@ -33,6 +33,7 @@ class WishListList extends Component {
                     .then((results) => {
                         console.log(results)
                         const userId = localStorage.getItem("credentials")
+                        console.log(userId)
                         const newWishListForLoggedInUser = results.filter(result => result.user.id === Number(userId))
                         this.setState({
                             wishlist: newWishListForLoggedInUser

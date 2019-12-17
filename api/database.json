@@ -2,11 +2,11 @@
   "users": [
     {
       "id": 1,
-      "name": "Jim",
+      "name": "Jim Madison",
       "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2FJim-1576265126893?alt=media&token=5ac451a5-bbe2-488f-9a95-4fe2c7f53b3c",
       "businessName": "Print Destroyer",
       "bio": "I'm a screen print artist and skateboarder. Welcome to my APP!",
-      "phone": "270-555-5555",
+      "phone": "270-555-4444",
       "favoriteQuote": "'Everyone will be famous for 15 minutes.' - Andy Warhol",
       "address": "1055 Three Springs Rd, Bowling Green, KY",
       "email": "jim@printdestroyer.com",
@@ -41,6 +41,16 @@
       "isAdmin": false,
       "password": "boomer",
       "confirmPassword": "boomer"
+    },
+    {
+      "name": "asdfgs",
+      "email": "dfg",
+      "password": "sfdg",
+      "confirmPassword": "sdfg",
+      "isAdmin": false,
+      "hasProfile": false,
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fasdfgs-1576617444456?alt=media&token=a59ec812-77eb-4b56-b795-4c8e9ab17981",
+      "id": 4
     }
   ],
   "prints": [
@@ -94,31 +104,14 @@
       "id": 7
     },
     {
-      "title": "No! Not Her!",
-      "cost": "$38.00",
-      "description": "16”x20” 5 color silkscreen signed and numbered edition of 25 art print.",
+      "id": 8,
       "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576132329329?alt=media&token=afd6ff92-7767-4658-a470-0d731757c21d",
-      "id": 8
-    },
-    {
-      "title": "Clauss 3",
-      "cost": "$78.00",
-      "description": "10”x20” one of a kind silkscreen monoprint.",
-      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576132477300?alt=media&token=f2a86756-000f-40b2-8177-bf777cc2a02a",
-      "id": 9
+      "title": "No! Not Her!",
+      "description": "16”x20” 5 color silkscreen signed and numbered edition of 25 art print.",
+      "cost": "$38.00"
     }
   ],
   "wishlist": [
-    {
-      "userId": 5,
-      "printId": 8,
-      "id": 11
-    },
-    {
-      "userId": 5,
-      "printId": 5,
-      "id": 12
-    },
     {
       "userId": 3,
       "printId": 1,
@@ -128,6 +121,11 @@
       "userId": 2,
       "printId": 2,
       "id": 14
+    },
+    {
+      "userId": 3,
+      "printId": 8,
+      "id": 15
     }
   ]
 }

@@ -49,18 +49,18 @@ class NavBar extends Component {
                   <div className="links-Wishlist"><li><Link className="nav-link" to="/wishlist">Wish List</Link></li></div><hr />
                   <div className="links-LogOut"><li><Link className="nav-link" onClick={this.handleLogout}>Log Out</Link></li></div> 
                 </>
-              </ul>
+              </ul> <hr />
             </nav> : null}
           {Number(userId) === 1 ?
             <nav className="navBar">
               <ul className="navList">
                 <>
-                <div className="links"><li><Link className="nav-link" to="/profile">Profile</Link></li></div>
-                <div className="links"><li><Link className="nav-link" to="/prints">Inventory</Link></li></div>
-                <div className="links"><li><Link className="nav-link" to="/customers">Customers</Link></li></div><hr />
-                <div className="links"><li><Link className="nav-link" onClick={this.handleLogout}>Log Out</Link></li></div>
+                <div className="links-Profile"><li><Link className="nav-link" to="/profile">Profile</Link></li></div>
+                <div className="links-Prints"><li><Link className="nav-link" to="/prints">Inventory</Link></li></div>
+                <div className="links-Wishlist"><li><Link className="nav-link" to="/customers">Customers</Link></li></div><hr />
+                <div className="links-LogOut"><li><Link className="nav-link" onClick={this.handleLogout}>Log Out</Link></li></div>
                 </>
-              </ul>
+              </ul> <hr />
             </nav> : null}
             </div>
       </header> 
@@ -68,4 +68,5 @@ class NavBar extends Component {
     )
   }
 }
+
 export default withRouter(NavBar);
