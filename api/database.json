@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "name": "Jim",
+      "name": "Jim Madison",
       "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2FJim-1576265126893?alt=media&token=5ac451a5-bbe2-488f-9a95-4fe2c7f53b3c",
       "businessName": "Print Destroyer",
       "bio": "I'm a screen print artist and skateboarder. Welcome to my APP!",
@@ -41,21 +41,6 @@
       "isAdmin": false,
       "password": "boomer",
       "confirmPassword": "boomer"
-    },
-    {
-      "name": "curtis",
-      "email": "curtis@gmail.com",
-      "password": "curtis",
-      "confirmPassword": "curtis",
-      "isAdmin": false,
-      "hasProfile": false,
-      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fcurtis-1576612571319?alt=media&token=c843e9e0-0562-40fa-831c-423015a37f39",
-      "id": 4,
-      "businessName": "curtis rocks",
-      "address": "nss, nashville, tn",
-      "phone": "555-555-5555",
-      "bio": "I'm a software engineer",
-      "favoriteQuote": "something,."
     }
   ],
   "prints": [
@@ -114,13 +99,6 @@
       "title": "No! Not Her!",
       "description": "16”x20” 5 color silkscreen signed and numbered edition of 25 art print.",
       "cost": "$38.00"
-    },
-    {
-      "title": "Claus 3",
-      "cost": "$78.00",
-      "description": "print",
-      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fundefined-1576604948219?alt=media&token=6991fcb0-b2d4-462d-aa5d-63799fc5af48",
-      "id": 9
     }
   ],
   "wishlist": [
@@ -138,11 +116,6 @@
       "userId": 3,
       "printId": 8,
       "id": 15
-    },
-    {
-      "userId": 4,
-      "printId": 4,
-      "id": 16
     }
   ]
 }

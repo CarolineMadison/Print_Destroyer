@@ -30,10 +30,8 @@ class ProfileCard extends Component {
     deleteAccount = () => {
         const userId = localStorage.getItem("credentials")
         printAPIManager.delete("users", userId)
-            .then(() => {
-                this.clearUser()
-                this.props.history.push("/")
-            })
+            .then(() => { this.clearUser() })
+            .then(() => this.props.history.push("/"))     
     }
 
     render() {
