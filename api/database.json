@@ -41,6 +41,21 @@
       "isAdmin": false,
       "password": "boomer",
       "confirmPassword": "boomer"
+    },
+    {
+      "name": "curtis",
+      "email": "curtis@gmail.com",
+      "password": "curtis",
+      "confirmPassword": "curtis",
+      "isAdmin": false,
+      "hasProfile": false,
+      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2Fcurtis-1576612571319?alt=media&token=c843e9e0-0562-40fa-831c-423015a37f39",
+      "id": 4,
+      "businessName": "curtis rocks",
+      "address": "nss, nashville, tn",
+      "phone": "555-555-5555",
+      "bio": "I'm a software engineer",
+      "favoriteQuote": "something,."
     }
   ],
   "prints": [
@@ -123,6 +138,11 @@
       "userId": 3,
       "printId": 8,
       "id": 15
+    },
+    {
+      "userId": 4,
+      "printId": 4,
+      "id": 16
     }
   ]
 }
