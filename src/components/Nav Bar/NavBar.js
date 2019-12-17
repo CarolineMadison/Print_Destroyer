@@ -44,11 +44,10 @@ class NavBar extends Component {
             <nav className="navBar">
               <ul className="navList">
                 <>
-                  <li><Link className="nav-link" to="/profile">Profile</Link></li>
-                  <li><Link className="nav-link" to="/prints">Prints</Link></li>
-                  <li><Link className="nav-link" to="/wishlist">Wish List</Link></li>
-                  <li><Link className="nav-link" onClick={this.handleLogout}>Log Out</Link></li>
-                  <hr />
+                  <div className="links-Profile"><li><Link className="nav-link" to="/profile">Profile</Link></li></div>
+                  <div className="links-Prints"><li><Link className="nav-link" to="/prints">Prints</Link></li></div>
+                  <div className="links-Wishlist"><li><Link className="nav-link" to="/wishlist">Wish List</Link></li></div><hr />
+                  <div className="links-LogOut"><li><Link className="nav-link" onClick={this.handleLogout}>Log Out</Link></li></div> 
                 </>
               </ul>
             </nav> : null}
@@ -56,11 +55,10 @@ class NavBar extends Component {
             <nav className="navBar">
               <ul className="navList">
                 <>
-                  <li><Link className="nav-link" to="/profile">Profile</Link></li>
-                  <li><Link className="nav-link" to="/prints">Inventory</Link></li>
-                  <li><Link className="nav-link" to="/customers">Customers</Link></li>
-                  <li><Link className="nav-link" onClick={this.handleLogout}>Log Out</Link></li>
-                  <hr />
+                <div className="links"><li><Link className="nav-link" to="/profile">Profile</Link></li></div>
+                <div className="links"><li><Link className="nav-link" to="/prints">Inventory</Link></li></div>
+                <div className="links"><li><Link className="nav-link" to="/customers">Customers</Link></li></div><hr />
+                <div className="links"><li><Link className="nav-link" onClick={this.handleLogout}>Log Out</Link></li></div>
                 </>
               </ul>
             </nav> : null}

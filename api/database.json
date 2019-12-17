@@ -30,20 +30,6 @@
     },
     {
       "id": 3,
-      "name": "Caroline Madison",
-      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2FCaroline%20Madison-1576338360059?alt=media&token=59bd5968-cf2b-4bab-a470-7897364939f2",
-      "businessName": "Caroline's App Shop",
-      "bio": "Creative Writer - Software Engineer",
-      "phone": "615-555-5555",
-      "favoriteQuote": "'And moreover, to succeed, the artist must possess the courageous soul.' - Kate Chopin",
-      "address": "104 Doral Ln, Hendersonville, TN 37075",
-      "email": "brownleecaroline@gmail.com",
-      "isAdmin": false,
-      "password": "caroline",
-      "confirmPassword": "caroline"
-    },
-    {
-      "id": 4,
       "name": "Doug Boomer",
       "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2FDoug%20Boomer-1576514935336?alt=media&token=d0702a9c-f8ed-43be-b06c-ddf9763d270b",
       "businessName": "Boomer's Mountainside Adventures",
@@ -55,21 +41,6 @@
       "isAdmin": false,
       "password": "boomer",
       "confirmPassword": "boomer"
-    },
-    {
-      "name": "Samantha Whatever Her Name",
-      "email": "sam@gmail.com",
-      "password": "sa,",
-      "confirmPassword": "sam",
-      "isAdmin": false,
-      "hasProfile": false,
-      "photo": "https://firebasestorage.googleapis.com/v0/b/print-destroyer.appspot.com/o/images%2FSamantha%20Whatever%20Her%20Name-1576530444473?alt=media&token=ac5fe9d7-e7cc-4dbf-92fd-3ad3a2862fa9",
-      "id": 5,
-      "businessName": "MY business",
-      "address": "none of yours",
-      "phone": "222-222-2222",
-      "bio": "I am a person.",
-      "favoriteQuote": "cool."
     }
   ],
   "prints": [

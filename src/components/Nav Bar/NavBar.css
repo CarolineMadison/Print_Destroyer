@@ -1,27 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Londrina+Outline&display=swap');
 
-.headerContainer {
+/* .headerContainer {
   background-color:  black;
-}
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+} */
 
-nav.navBar {
+/* .navBar {
     display: flex;
-    flex-wrap: wrap;
-}
+    flex-direction: row;
+}  */
 
-navBar.li {
+/* navBar.li {
 flex-direction: column;
-}
+} */
 
 .navBar a:hover {
     color: maroon;
-}
-
-.navBar {
-    display: flex;
-    justify-content: flex-start;
-    color: white;
 }
 
 nav li {
@@ -36,4 +33,28 @@ a {
 
 .nav-link {
     color: goldenrod;
+}
+
+.navList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.div {
+    align-self: center;
+}
+
+.links-Profile {
+    padding-right: 10px;
+}
+
+.links-Prints {
+    padding-right: 10px;
+}
+
+.links-wishlist {
+    padding-left: 10px;
 }
